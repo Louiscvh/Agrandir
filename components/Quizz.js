@@ -71,7 +71,7 @@ export default function Quizz() {
     ]
 
   return (
-    <section id={"3"}>
+    <section id={"4"}>
         {
             quizzdata.map((elt, i) => (
                 <div key={i}>

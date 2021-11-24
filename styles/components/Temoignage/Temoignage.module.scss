@@ -1,1 +1,40 @@
-            
+.temoignageContainer{
+    position: relative;
+    .temoignageBlock{
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: scroll;
+        width: 40%;
+        margin-left: auto;
+        height: 500px;
+        h1{
+            font-size: 2.5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        width: 60%;
+        height: 80px;
+        top: calc(0px + 100px);
+        right: 0;
+        background-image: linear-gradient(to top, rgb(255 255 255 / 25%), #F8F8F8F8);
+    }
+}
+
+@media only screen and (max-width : 1024px){
+    .temoignageContainer{
+        .temoignageBlock{
+            width: 100%;
+        }
+        &::after{
+            width: 100%;
+        }
+    }
+}
