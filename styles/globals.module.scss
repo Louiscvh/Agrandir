@@ -1,4 +1,23 @@
+@font-face {
+    font-family: 'sequel_100_black55';
+    src: url('./sequel-webfont.woff2') format('woff2'),
+         url('./sequel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
+
+    h1, h2 {
+        font-family: 'sequel_100_black55';
+    }
+
+    p, h3 {
+        font-family: sofia-pro, sans-serif;
+    }
 }
+
+
+
