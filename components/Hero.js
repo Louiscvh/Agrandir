@@ -7,7 +7,7 @@ export default function Hero() {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-        if(window.scrollY < 1000) heroBackground.current.style.transform = `scale(${(window.scrollY + 250) * 2})`;
+        if(window.scrollY < 1280) heroBackground.current.style.transform = `scale(${(window.scrollY + 250) * 2})`;
     })  
   });
 
