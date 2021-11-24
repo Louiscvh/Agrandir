@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/globals.module.scss'
 import Header from '../components/Header'
+import Reassurances from '../components/Reassurances'
+import Faq from '../components/Faq'
+import Quizz from '../components/Quizz'
 
 export default function Home() {
   return (
@@ -11,6 +14,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Reassurances/>
+      <Quizz/>
+      <Faq/>
       <main className={styles.main}>
         <h1 className={styles.title}>Bonjour</h1>
       </main>
