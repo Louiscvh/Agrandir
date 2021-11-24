@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "globals.module.scss"
+    ],
+    "names": [],
+    "file": "globals.module.css"
+}
