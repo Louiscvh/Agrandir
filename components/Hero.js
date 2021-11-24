@@ -7,7 +7,7 @@ export default function Hero() {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-        if(window.scrollY < 1000) heroBackground.current.style.transform = `scale(${(window.scrollY + 250) * 2})`;
+        if(window.scrollY < 1280) heroBackground.current.style.transform = `scale(${(window.scrollY + 250) * 2})`;
     })  
   });
 
@@ -33,9 +33,6 @@ export default function Hero() {
                 </div>
             </div>
         </div>
-        <section id={"2"} className={styles.hero}></section>
-        <section id={"3"} className={styles.hero}></section>
-
     </section>
   );
 }

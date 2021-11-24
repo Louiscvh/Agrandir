@@ -69,13 +69,9 @@ export default function Quizz() {
             ]
         }
     ]
-    quizzdata.map((elt) => {
-
-        console.log(elt.reponse)
-    })
 
   return (
-    <section id={"4"}>
+    <section id={"3"}>
         {
             quizzdata.map((elt, i) => (
                 <div key={i}>

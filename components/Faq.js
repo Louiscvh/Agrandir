@@ -21,7 +21,7 @@ export default function Faq() {
         setSelected(i)
     }
   return (
-    <section id={"5"}>
+    <section id={"4"}>
         {faqdata.map((elt, i) => (
                 <div key={i} className={styles.faq} onClick={() => toggle(i)}>
                     <h1>Titre</h1>

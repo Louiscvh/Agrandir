@@ -15,13 +15,10 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <Hero />
+        <Reassurances/>
+        <Quizz/>
+        <Faq/>
       </div>
-      <Reassurances/>
-      <Quizz/>
-      <Faq/>
-      <main className={styles.main}>
-        <h1 className={styles.title}>Bonjour</h1>
-      </main>
       <style jsx global>{`
 
         html {
