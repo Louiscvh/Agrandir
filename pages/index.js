@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import Reassurances from "../components/Reassurances";
 import Quizz from "../components/Quizz";
 import Faq from "../components/Faq";
+import Temoignage from "../components/Temoignage";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <div className={styles.container}>
         <Hero />
         <Reassurances/>
+        <Temoignage />
         <Quizz/>
         <Faq/>
       </div>
