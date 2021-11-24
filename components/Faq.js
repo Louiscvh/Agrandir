@@ -28,7 +28,7 @@ export default function Faq() {
         setSelected(i)
     }
   return (
-    <section id={"4"} className={styles.faqContainer}>
+    <section id={"5"} className={styles.faqContainer}>
         {faqdata.map((elt, i) => (
                 <div key={i} className={selected === i ? styles.faqBlock+' '+ styles.show : styles.faqBlock} onClick={() => toggle(i)}>
                     <h1>{elt.title}</h1>
