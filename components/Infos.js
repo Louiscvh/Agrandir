@@ -1,4 +1,4 @@
-import styles from '../styles/components/Reassurances/Reassurance.module.scss'
+import styles from '../styles/components/Infos.module.scss'
 import Image from 'next/image'
 
 export default function Reassurances() {

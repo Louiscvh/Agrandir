@@ -1,4 +1,4 @@
-import styles from "../styles/components/Hero/Hero.module.scss";
+import styles from "../styles/components/Hero.module.scss";
 import { useEffect, useRef, useState, Suspense } from "react";
 import Header from '../components/Header'
 import { Canvas, useFrame } from '@react-three/fiber'
@@ -29,12 +29,12 @@ export default function Hero() {
         useFrame(({camera}) => {
             mesh.current.rotation.y = -pos / 5
             camera.position.x = -pos
-            if(camera.position.x > -3) console.log('scroll')
-            else  camera.position.x = -3
+            if(camera.position.x > -5) console.log('scroll')
+            else  camera.position.x = -5
         })
         return (
             <>
-                <primitive ref={mesh} object={gltf.scene} scale={0.4} />
+                <primitive ref={mesh} object={gltf.scene} scale={0.7} />
             </>
         );
     };

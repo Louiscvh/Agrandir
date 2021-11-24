@@ -3,8 +3,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-
     text-align: left;
+
     .faqBlock{
         cursor: pointer;
         position: relative;
@@ -13,6 +13,11 @@
         height: 60px;
         overflow: hidden;
         transition: all .5s;
+
+        p {
+            text-align: justify;
+        }
+
         &:after{
             position: absolute;
             bottom: 0;
@@ -24,9 +29,11 @@
             transition: transform 500ms ease-in-out;
             transform-origin: 0% 50%;
         }
+
         &:hover:after{
             transform: scaleX(0);
         }
+
         &.show{
             height: 200px;
         }

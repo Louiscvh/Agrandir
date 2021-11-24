@@ -1,10 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/globals.module.scss";
 import Hero from "../components/Hero";
-import Reassurances from "../components/Reassurances";
+import Infos from "../components/Infos";
 import Quizz from "../components/Quizz";
 import Faq from "../components/Faq";
-import Temoignage from "../components/Temoignage";
+import Interview from "../components/Interview";
 
 export default function Home() {
   return (
@@ -17,14 +17,15 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <Hero />
-        <Reassurances/>
-        <Temoignage />
+        <Infos/>
+        <Interview />
         <Quizz/>
         <Faq/>
       </div>
       <style jsx global>{`
         html {
           scroll-behavior: smooth;
+          overflow-x: hidden;
         }
 
         body {

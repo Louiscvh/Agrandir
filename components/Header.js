@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Images from "next/image";
-import styles from "../styles/components/Header/Header.module.scss";
+import styles from "../styles/components/Header.module.scss";
 import { useEffect, useRef } from "react";
 import logo from "../public/assets/img/logo.png";
 

@@ -1,4 +1,4 @@
-import styles from '../styles/components/Temoignage/Temoignage.module.scss'
+import styles from '../styles/components/Interview.module.scss'
 
 export default function Temoignage() {
     let data = [
@@ -12,7 +12,7 @@ export default function Temoignage() {
         {
             data.map((elt, i) => (
                 <div key={i} className={styles.temoignageBlock}>
-                    <h1>{elt.title}</h1>
+                    <h2>{elt.title}</h2>
                     <p>{elt.text}</p>
                 </div>
             ))

@@ -1,4 +1,4 @@
-import styles from '../styles/components/Quizz/Quizz.module.scss'
+import styles from '../styles/components/Quizz.module.scss'
 
 export default function Quizz() {
     let quizzdata = [
