@@ -20,7 +20,6 @@ export default function Home() {
         <Faq/>
       </div>
       <style jsx global>{`
-
         html {
           scroll-behavior: smooth;
         }
