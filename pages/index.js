@@ -27,6 +27,9 @@ export default function Home() {
           margin: 0px;
           padding: 0px;
         }
+        section:not(:first-of-type){
+          padding: 100px 20px;
+        }
       `}</style>
     </>
   )
