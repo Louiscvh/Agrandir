@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.navigation {
+    position: fixed;
+    right: 2.5%;
+    transform: translateX(-50%);
+    display: flex;
+    div {
+        height: 20px;
+        width: 2px;
+        opacity: 0.3;
+        background-color: black;
+        transition: all 0.3s ease;
+    }
+    a {
+        padding: 0px 10px;
+        transition: all 0.3s ease;
+        
+        &:hover div{
+            opacity: 1;
+            transform: scaleY(1.4);
+        }
+     }
+
+     .active {
+        transform: scaleY(1.6);
+      }  
+}

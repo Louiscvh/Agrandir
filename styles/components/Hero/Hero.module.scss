@@ -1,0 +1,94 @@
+.hero {
+    height: 200vh;
+
+    .hero__background {
+        z-index: -1;
+        height: 1px;
+        width: 1px;
+        position: fixed;
+        background-color: #F8F8F8F8;
+        border-radius: 50%;
+        left: 50%;
+        top: 50%;
+        transform : translate(-50%, 50%);
+        transform-origin: center center;
+        transition: transform 0.3s ease;
+    }    
+
+    .hero__text {
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform : translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        font-size: 2.5rem;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        & span:nth-child(2) {
+            text-align: right;
+        }
+        span {
+            margin: 50px 0px;
+        } 
+    }
+
+    .hero__footer {
+        position: absolute;
+        width: 90%;
+        top: 90vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            color: lightgray;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+
+        & div:nth-child(1) {
+            height: 35px;
+            width: 35px;
+            background-color: black;
+            border-radius: 150px;
+        }
+
+        .hero__social {
+            display: flex;
+
+            .hero__social__block {
+                background-color: lightgray;
+                height: 35px;
+                width: 35px;
+                border-radius: 150px;
+                margin-left: 30px;
+                position: relative;
+
+                &:hover .hero__social__wrapper {
+                    transform: scale(1)
+                }
+
+                .hero__social__wrapper{
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(0);
+                    background-color: black;
+                    position: absolute;
+                    transition: all .3s ease;
+                }
+            }
+
+            
+            
+        }
+    }
+}
+
