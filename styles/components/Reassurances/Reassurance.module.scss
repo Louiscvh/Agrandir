@@ -1,0 +1,20 @@
+.reassurance{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    border: 1px solid black;
+    padding: 15px;
+    .reassuranceImage{
+        width: 55px;
+    }
+    .reassuranceDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .reassuranceTitle,
+        .reassuranceText{
+            margin: 0;
+        }
+    }
+}

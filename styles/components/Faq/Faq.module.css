@@ -1,0 +1,13 @@
+.faq {
+  background-color: green;
+  width: 500px;
+}
+
+.faq .faqBlock {
+  display: none;
+}
+
+.faq .faqBlock.show {
+  display: block;
+}
+/*# sourceMappingURL=Faq.module.css.map */

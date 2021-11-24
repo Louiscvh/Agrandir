@@ -1,6 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/globals.module.scss";
 import Hero from "../components/Hero";
+import Reassurances from "../components/Reassurances";
+import Quizz from "../components/Quizz";
+import Faq from "../components/Faq";
 
 export default function Home() {
   return (
@@ -11,18 +14,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
-      <Hero />
-        <style jsx global>{`
-
-          html {
-            scroll-behavior: smooth;
-          }
-          body {
-            margin: 0px;
-            padding: 0px;
-          }
-        `}</style>
+        <Hero />
       </div>
+      <Reassurances/>
+      <Quizz/>
+      <Faq/>
+      <main className={styles.main}>
+        <h1 className={styles.title}>Bonjour</h1>
+      </main>
+      <style jsx global>{`
+
+        html {
+          scroll-behavior: smooth;
+        }
+        body {
+          margin: 0px;
+          padding: 0px;
+        }
+      `}</style>
     </>
-  );
+  )
 }

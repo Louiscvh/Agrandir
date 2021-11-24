@@ -1,0 +1,10 @@
+.faq{
+    background-color: green;
+    width: 500px;
+    .faqBlock{
+        display: none;
+        &.show{
+            display: block;
+        }
+    }
+}
