@@ -55,7 +55,6 @@ export default function Hero() {
                 <div className={styles.hero__background} ref={heroBackground} data-scroll="bg"></div>
             </div>
             <div className={styles.hero__footer}>
-                <div></div>
                 <p>#entregens2021</p>
                 <div className={styles.hero__social}>
                     <a href="#" className={styles.hero__social__block}>

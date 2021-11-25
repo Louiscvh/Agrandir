@@ -41,8 +41,10 @@
         width: 90%;
         top: 90vh;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
+
+
 
         p {
             text-transform: uppercase;
@@ -54,13 +56,6 @@
             transform: translateX(-50%);
             margin-block-start: 0em;
             margin-block-end: 0em;
-        }
-
-        & div:nth-child(1) {
-            height: 35px;
-            width: 35px;
-            background-color: black;
-            border-radius: 150px;
         }
 
         .hero__social {
