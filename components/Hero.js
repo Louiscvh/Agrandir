@@ -31,8 +31,7 @@ export default function Hero() {
         useFrame(({camera}) => {
             mesh.current.rotation.y = -pos / 5
             camera.position.x = -pos
-            if(camera.position.x > -5) console.log('scroll')
-            else  camera.position.x = -5
+            if(camera.position.x < -5) camera.position.x = -5
         })
         return (
             <>
