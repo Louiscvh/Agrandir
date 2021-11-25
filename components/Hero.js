@@ -51,7 +51,7 @@ export default function Hero() {
             <Header />
             <div>
                 <h1 className={styles.hero__text}><span>Lorem ipsum dolor sit amet,</span><span> consectetur adipiscing elit.</span></h1>
-                <div className={styles.hero__background} ref={heroBackground}></div>
+                <div className={styles.hero__background} ref={heroBackground} data-scroll="bg"></div>
             </div>
             <div className={styles.hero__footer}>
                 <div></div>

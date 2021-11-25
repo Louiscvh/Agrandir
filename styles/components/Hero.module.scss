@@ -12,7 +12,7 @@
         top: 50%;
         transform : translate(-50%, 50%) scale(500);
         transform-origin: center center;
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, background-color .8s ease;
     }    
 
     .hero__text {
