@@ -5,19 +5,19 @@ export default function Faq() {
     let faqdata = [
         {
             title: 'Question 1',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin vitae enim id ornare. Proin a massa enim. Aenean luctus non odio id hendrerit. Integer diam justo, bibendum at felis at, consequat laoreet elit. Praesent ultrices non dolor vel tincidunt. In aliquam ornare dapibus. Aliquam dolor arcu, efficitur vitae purus sit amet, tincidunt fringilla orci.'
+            text: 'Quelle est la meilleure et la pire chose dans le fait d\'être un homme? Quel film aimez-vous tant que vous pouvez regarder à plusieurs reprises ?'
         },
         {
             title: 'Question 2',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin vitae enim id ornare. Proin a massa enim. Aenean luctus non odio id hendrerit. Integer diam justo, bibendum at felis at, consequat laoreet elit. Praesent ultrices non dolor vel tincidunt. In aliquam ornare dapibus. Aliquam dolor arcu, efficitur vitae purus sit amet, tincidunt fringilla orci.'
+            text: 'Que feriez-vous / ne feriez-vous pas pour un million de dollars? Quelle est une chose que vous appréciez quand vous étiez enfant et que vous appréciez encore ?'
         },
         {
             title: 'Question 3',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin vitae enim id ornare. Proin a massa enim. Aenean luctus non odio id hendrerit. Integer diam justo, bibendum at felis at, consequat laoreet elit. Praesent ultrices non dolor vel tincidunt. In aliquam ornare dapibus. Aliquam dolor arcu, efficitur vitae purus sit amet, tincidunt fringilla orci.'
+            text: 'Quelle est la situation de pression la plus élevée dans laquelle vous ayez jamais été et comment l avez-vous gérée? Qu est-ce qui vous stresse ?'
         },
         {
             title: 'Question 4',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin vitae enim id ornare. Proin a massa enim. Aenean luctus non odio id hendrerit. Integer diam justo, bibendum at felis at, consequat laoreet elit. Praesent ultrices non dolor vel tincidunt. In aliquam ornare dapibus. Aliquam dolor arcu, efficitur vitae purus sit amet, tincidunt fringilla orci.'
+            text: 'Quelle personne ou quel événement a eu le plus grand impact sur votre vie ? Si vous pouviez faire une chose chaque jour de votre vie pour le reste de votre vie, quelle serait-elle ?'
         }
     ]
     const [selected, setSelected] = useState(null)
