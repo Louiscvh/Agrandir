@@ -72,9 +72,29 @@
                 border-radius: 150px;
                 margin-left: 30px;
                 position: relative;
-
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 &:hover .hero__social__wrapper {
                     transform: scale(1)
+                }
+
+                svg{
+                    position: relative;
+                    z-index: 1;
+                    path{
+                        transition: all .3s ease;
+                    }
+                }
+
+                &:hover svg:nth-child(2){
+                    path{
+                        stroke: white;
+                        fill: none;
+                    }
+                }
+                &:hover svg path{
+                    fill: white;
                 }
 
                 .hero__social__wrapper{
