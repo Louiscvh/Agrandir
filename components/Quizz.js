@@ -91,7 +91,7 @@ export default function Quizz() {
             }
         })
         }, options)
-        io.observe(quiz.current)
+        //o.observe(quiz.current)
     })
 
   return (

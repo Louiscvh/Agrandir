@@ -1,14 +1,15 @@
 import Head from "next/head";
 import Images from "next/image";
 import styles from "../styles/components/Header.module.scss";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import logo from "../public/assets/img/logo.png";
 
 export default function Header() {
   useEffect(() => {
     let sections = document.querySelectorAll("section"),
-      compteur = document.querySelector("h1"),
       nav = document.querySelector("nav");
+
+      console.log(sections)
 
     sections.forEach((el, i) => {
      nav.innerHTML += `<a href="#${el.id}"><div data-scroll="nav"></div></a>`

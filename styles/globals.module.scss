@@ -52,6 +52,13 @@
 
 }
 
+.scrollbar {
+    width: 5px;
+    position: fixed;
+    top: 0;
+    background-color: gray;
+  }
+
 .container {
     width: 90%;
     margin: 0 auto;

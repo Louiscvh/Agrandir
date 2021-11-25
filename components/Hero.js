@@ -30,8 +30,8 @@ export default function Hero() {
         const gltf = useLoader(GLTFLoader, "./assets/models/scene.gltf");
         useFrame(({camera}) => {
             mesh.current.rotation.y = -pos / 5
-            camera.position.x = -pos
-            if(camera.position.x < -5) camera.position.x = -5
+            //camera.position.x = -pos
+            //if(camera.position.x < -5) camera.position.x = -5
         })
         return (
             <>
@@ -42,7 +42,7 @@ export default function Hero() {
 
     return (
         <section id={"1"} className={styles.hero}>
-            <Canvas camera={{ fov: 12, position: [0, 10, 35]}} colorManagement={false}>
+            <Canvas camera={{ fov: 12, position: [0, 10, 35]}} colorManagement={false} id="canvas">
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
                 <Suspense fallback={null}>
