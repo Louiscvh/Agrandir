@@ -20,6 +20,14 @@ export default function Hero() {
     }, [pos])
 
     useEffect(() => {
+        let currentMousePos = {}
+        document.body.addEventListener('mousemove', (e) => {
+            currentMousePos.x = e.pageX
+            currentMousePos.y = e.pageY
+
+            heroBackground.current.style.left = ((window.innerWidth * 0.5 * 1.15) +- currentMousePos.x / 6) + "px"
+            heroBackground.current.style.top = ((window.innerWidth * 0.5 * 0.7) +- currentMousePos.y / 3) + "px"                    
+        })
         window.addEventListener('scroll', () => {
             if (window.scrollY < 1280) heroBackground.current.style.transform = `scale(${(window.scrollY + 250) * 2})`;
         })
