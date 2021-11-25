@@ -3,8 +3,8 @@ import styles from '../styles/components/Interview.module.scss'
 export default function Temoignage() {
     let data = [
         {
-            title: 'Témoignage',
-            text: 'Volutpat orci elementum risus  Proin odio et sagittis vulputate morbi eget interdum. Sit lobortis viverra felis, orci odio justo maecenas curabitur augue. Convallis porttitor aliquet ipsum dui. Sit ipsum vestibulum, malesuada facilisi elit, proin in diam. Erat aliquam, ultrices aliquet leo. Ut gravida tempus risus magna purus. Iaculis sed dignissim suspendisse imperdiet eget nunc pharetra diam malesuada. Volutpat orci elementum risus  Proin odio et sagittis vulputate morbi eget interdum. Sit lobortis viverra felis, orci odio justo maecenas curabitur augue. Convallis porttitor aliquet ipsum dui. Sit ipsum vestibulum, malesuada facilisi elit, proin in diam. Erat aliquam, ultrices aliquet leo. Ut gravida tempus risus magna purus. Iaculis sed dignissim suspendisse imperdiet eget nunc pharetra diam malesuada. Volutpat orci elementum risus  Proin odio et sagittis vulputate morbi eget interdum. Sit lobortis viverra felis, orci odio justo maecenas curabitur augue. Convallis porttitor aliquet ipsum dui. Sit ipsum vestibulum, malesuada facilisi elit, proin in diam. Erat aliquam, ultrices aliquet leo. Ut gravida tempus risus magna purus. Iaculis sed dignissim suspendisse imperdiet eget nunc pharetra diam malesuada. '
+            title: 'L’entraînement à l’entrepreneuriat',
+            text: 'Les Entrep’ est un programme dispensé par des professionnels pour tester l’entrepreneuriat pendant cinq mois (de novembre à mars et c’est compatible en plus des études ou d’un job.). Pas  de théorie, que de l’expérience hors les murs… car seul BRISER les murs peut élargir les horizons ! Entraînez-vous à créer une entreprise ou une startup en équipe multi-compétences de 3 à 5 jeunes (30 ans et moins, post-bac, étudiant, jeune diplômé ou en recherche d’activité).',
         }
     ]
   return (

@@ -4,30 +4,30 @@ import Image from 'next/image'
 export default function Reassurances() {
     let data = [
         {
-            title: 'Ludo',
-            text: 'Integer blandit elit, velit turpis. Eget magna at pretium sit accumsan, nisi, pellentesque bibendum mollis. Libero id quis at sed facilisis.',
+            title: 'Kim',
+            text: 'Elle designent toutes les deux la future mascotte de notre Agence AGRANDIR.',
             image: 'https://images.pexels.com/photos/4115538/pexels-photo-4115538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
         },
         {
-            title: 'Tibo',
-            text: 'Integer blandit elit, velit turpis. Eget magna at pretium sit accumsan, nisi, pellentesque bibendum mollis. Libero id quis at sed facilisis.',
+            title: 'Clara',
+            text: 'Elle designent toutes les deux la future mascotte de notre Agence AGRANDIR.',
             image: 'https://images.pexels.com/photos/4115538/pexels-photo-4115538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
         },
         {
-            title: 'Loris',
-            text: 'Integer blandit elit, velit turpis. Eget magna at pretium sit accumsan, nisi, pellentesque bibendum mollis. Libero id quis at sed facilisis.',
+            title: 'Lina',
+            text: 'Elle discute avec Henry avec Cécile avec tous les référents de la compèt ',
             image: 'https://images.pexels.com/photos/4115538/pexels-photo-4115538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
         },
         {
-            title: 'Paulo',
-            text: 'Integer blandit elit, velit turpis. Eget magna at pretium sit accumsan, nisi, pellentesque bibendum mollis. Libero id quis at sed facilisis.',
+            title: 'Yves',
+            text: 'Il se balade de droite à gauche dans l école en pensant à son avenir.',
             image: 'https://images.pexels.com/photos/4115538/pexels-photo-4115538.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
         }
     ]
   return (
     <section id={"2"} className={styles.reassurances}>
         <div className={styles.reassurances__container}>
-            <h2>Turpis a egestas <span>senectus habit,</span></h2>
+            <h2>Toute notre équipe <span>bosse à fond,</span></h2>
             {
                 data.map((elt, i) => {
                     return <ReassurancesBlock key={i} title={elt.title} text={elt.text} image={elt.image} />
