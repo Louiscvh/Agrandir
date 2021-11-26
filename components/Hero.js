@@ -37,9 +37,7 @@ export default function Hero() {
         const mesh = useRef()
         const gltf = useLoader(GLTFLoader, "./assets/models/scene.gltf");
         useFrame(({camera}) => {
-            mesh.current.rotation.y = -pos / 5
-            //camera.position.x = -pos
-            //if(camera.position.x < -5) camera.position.x = -5
+            mesh.current.rotation.y = -pos / 3
         })
         return (
             <>

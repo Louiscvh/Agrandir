@@ -1,0 +1,21 @@
+.footer {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    form {
+        width: 100%;
+
+        input {
+            width: 50%;
+            margin: 10px 0px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    }
+}

@@ -9,8 +9,6 @@ export default function Header() {
     let sections = document.querySelectorAll("section"),
       nav = document.querySelector("nav");
 
-      console.log(sections)
-
     sections.forEach((el, i) => {
      nav.innerHTML += `<a href="#${el.id}"><div data-scroll="nav"></div></a>`
     });
