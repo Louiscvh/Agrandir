@@ -55,12 +55,13 @@
 .scrollbar {
     height: 50px;
     width: 50px;
-    background-color: black;
+    background-color: #000000;
     border-radius: 150px;
     position: fixed;
     overflow: hidden;
     left: 5%;
     bottom: 5%;
+    border: 1px solid #000000;
     .scrollbar__indicator{
         position: absolute;
         top: 0;
