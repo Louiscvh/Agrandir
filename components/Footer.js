@@ -37,24 +37,44 @@ export default function Footer() {
     }
   return (
     <footer className={styles.footer}>
-      <form onSubmit={subscribe}>
-        <label htmlFor="email-input">{"Adresse mail"}</label>
-        <br></br>
-        <input
-          id="email-input"
-          name="email"
-          placeholder="you@awesome.com"
-          ref={inputEl}
-          required
-          type="email"
-        />
-        <div>
-          {message
-            ? message
-            : `I'll only send emails when new content is posted. No spam.`}
-        </div>
-        <button type="submit">{"S'abonner"}</button>
-      </form>
+      <div class={styles.footerBlock}>
+        <h3>About Us</h3>
+        <ul>
+          <li>Qui sommes nous ?</li>
+          <li>Entre-aide</li>
+        </ul>
+      </div>
+      <div class={styles.footerBlock}>
+        <h3>Mentions légales</h3>
+        <ul>
+          <li>CGC</li>
+        </ul>
+      </div>
+      <div class={styles.footerBlock}>
+        <h3>Mentions légales</h3>
+        <ul>
+          <li><a href="#">hello@entre-gens.fr</a></li>
+        </ul>
+      </div>
+      <div className={styles.footerBlock}>
+        <form onSubmit={subscribe}>
+          <h3>Newsletter</h3>
+          <input
+            id="email-input"
+            name="email"
+            placeholder="you@awesome.com"
+            ref={inputEl}
+            required
+            type="email"
+          />
+          <div>
+            {message
+              ? message
+              : `I'll only send emails when new content is posted. No spam.`}
+          </div>
+          <button type="submit">{"S'abonner"}</button>
+        </form>
+      </div>
     </footer>
   );
 }
