@@ -2,7 +2,7 @@ import Head from "next/head";
 import Images from "next/image";
 import styles from "../styles/components/Header.module.scss";
 import { useEffect } from "react";
-import logo from "../public/assets/img/logo.png";
+import logo from "../public/assets/img/logo.webp";
 
 export default function Header() {
   useEffect(() => {

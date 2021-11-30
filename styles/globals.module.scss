@@ -63,11 +63,21 @@
     left: 5%;
     bottom: 5%;
     border: 1px solid #000000;
-    .scrollbar__indicator{
+    transition: 0.3s ease;
+
+    .scrollbarIndicator{
         position: absolute;
         top: 0;
         width: 100%;
         background-color: #F8F8F8F8;
+    }
+
+    svg {
+        mix-blend-mode: difference;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
