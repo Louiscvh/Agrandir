@@ -31,7 +31,13 @@ export default function Faq() {
     <section id={"5"} className={styles.faqContainer}>
         {faqdata.map((elt, i) => (
                 <div key={i} className={selected === i ? styles.faqBlock+' '+ styles.show : styles.faqBlock} onClick={() => toggle(i)}>
-                    <h2>{elt.title}</h2>
+                    <div className={styles.faqHeader}>
+                        <h2>{elt.title}</h2>
+                        <div className={selected === i ? styles.faqCrossContainer+' '+styles.isOpen : styles.faqCrossContainer}>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <p className={styles.faqTitle}>{elt.text}</p>
                 </div>
             ))}
