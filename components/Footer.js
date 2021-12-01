@@ -37,20 +37,20 @@ export default function Footer() {
     }
   return (
     <footer className={styles.footer}>
-      <div class={styles.footerBlock}>
+      <div className={styles.footerBlock}>
         <h3>About Us</h3>
         <ul>
           <li>Qui sommes nous ?</li>
           <li>Entre-aide</li>
         </ul>
       </div>
-      <div class={styles.footerBlock}>
+      <div className={styles.footerBlock}>
         <h3>Mentions légales</h3>
         <ul>
           <li>CGC</li>
         </ul>
       </div>
-      <div class={styles.footerBlock}>
+      <div className={styles.footerBlock}>
         <h3>Mentions légales</h3>
         <ul>
           <li><a href="#">hello@entre-gens.fr</a></li>

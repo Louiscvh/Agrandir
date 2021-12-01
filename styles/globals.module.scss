@@ -18,7 +18,6 @@
 
 
 
-
 @font-face {
     font-family: 'sofia_prosemibold';
     src: url('./fonts/sofia_pro_semi_bold_az-webfont.woff2') format('woff2'),
@@ -27,7 +26,6 @@
     font-style: normal;
 
 }
-
 
 
 
@@ -81,6 +79,8 @@
 }
 
 .cursor {
+    position: absolute;
+    z-index: 99999999999;
     height: 12px;
     width: 12px;
     background-color: pink;
@@ -91,14 +91,15 @@
     width: 90%;
     margin: 0 auto;
 
-    h1, h2 {
+    h1, h2{
         font-family: 'sequel_100_black55';
     }
 
-    p,label, h3 {
+    p,label, h3 , li {
         font-family: 'sofia_proregular';
     }
 }
+
 
 
 

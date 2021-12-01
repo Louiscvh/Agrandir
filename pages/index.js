@@ -62,7 +62,9 @@ export default function Home() {
       </div>
       <div className={styles.container}>
         <Hero />
+      </div>
         <Infos />
+      <div className={styles.container}>
         <Interview />
         <Quizz />
         <Faq />
@@ -79,6 +81,7 @@ export default function Home() {
           margin: 0px;
           padding: 0px;
         }
+
         section:not(:first-of-type){
           padding: 100px 20px;
         }
