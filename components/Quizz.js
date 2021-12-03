@@ -65,7 +65,7 @@ export default function Quizz() {
         
         const scoring = (currentScore) => {
         score += currentScore
-        document.getElementById('score').innerHTML = score
+        //document.getElementById('score').innerHTML = score
         }
         
         document.querySelector('[data-button-next]').addEventListener('click', function(){
@@ -82,16 +82,16 @@ export default function Quizz() {
         currentQuestion.push(questions.filter(question => question.index == id))
         currentQuestion.map((elt, i) => {
             if(i >= questions.length) {
-                    if(score > 600) alert("Mashalah t'as gagné")
+                  if(score > 600) alert("MashAllah t'as gagné")
             else  {
                 score = 0
-                document.querySelector('h2').innerHTML = score
+                //document.querySelector('h2').innerHTML = score
                 alert('Tu pues') 
                 }
             }
             let question = elt[0]
-            document.getElementById('totalQuestions').innerHTML = `${i + 1} - ${questions.length}`
-            container.innerHTML = `<h2>${question.titre}</h2>
+            //document.getElementById('totalQuestions').innerHTML = `${i + 1} - ${questions.length}`
+            container.innerHTML = `<h1>${question.titre}</h1>
                 ${question.answers.map((elt,i) => {
             return `<div>
                         <input type='radio' name='${elt.id}' value='${elt.value}' required>
@@ -104,13 +104,11 @@ export default function Quizz() {
         changeQuestion(0)
     })
   return (
-    <section id={"4"} className={styles.quiz} ref={quiz}>
+    <section id={"4"} className={styles.quizzContainer} ref={quiz}>
         {
-            <div>
-                <h1>Quizz</h1>
-                <h2 id={'score'}>0</h2><p id={'totalQuestions'}></p>
+            <div className={styles.quizzBlock}>
                 <form></form>
-                <button className={styles.next} data-button-next>
+                <button className={styles.btnPrimary} data-button-next>
                     Question Suivante
                 </button>
             </div>

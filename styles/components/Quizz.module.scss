@@ -1,4 +1,25 @@
-.quiz {
+.quizzContainer {
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    .quizzBlock{
+        width: 80%;
+        form{
+            div{
+                background-color: #ffffff;
+                color: #494949;
+                padding:20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+        }
+        .btnPrimary{
+            padding: 20px;
+            background-color: #DD5068;
+            color: #F9F9F9;
+            border-radius: 20px;
+            border: none;
+        }
+    }
 }
