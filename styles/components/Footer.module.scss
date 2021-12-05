@@ -29,10 +29,26 @@
         form {
             width: 100%;
             padding-top: 0;
-    
+            
+            .inputBlock{
+                display: flex;
+                .email{
+                    border-radius: 5px 0 0 5px;
+                    color: #818181;
+                    text-transform: uppercase;
+                    width: 300px;
+                }
+                .subscribe{
+                    background: #181611;
+                    color: #F9F9F9;
+                    width: 65px;
+                    border-radius: 0 5px 5px 0;
+                }
+            }
             input {
-                width: 50%;
+                border-color: #181611;
                 margin: 10px 0px;
+                padding: 15px;
             }
     
             button {

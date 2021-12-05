@@ -2,7 +2,7 @@ import styles from "../styles/components/Footer.module.scss";
 import React, { useRef, useState } from 'react';
 
 export default function Footer() {
-
+  const [searchString, setSearchString] = useState();
     // 1. Create a reference to the input so we can fetch/clear it's value.
   const inputEl = useRef(null);
   // 2. Hold a message in state to handle the response from our API.
@@ -57,22 +57,17 @@ export default function Footer() {
         </ul>
       </div>
       <div className={styles.footerBlock}>
+        <h3>Newsletter</h3>
         <div id="mc_embed_signup">
           <form action="https://gmail.us4.list-manage.com/subscribe/post?u=17a0be9527ab15dda24728fbe&amp;id=f444bebad9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
               <div id="mc_embed_signup_scroll">
-                <input type="email" value="" name="EMAIL" className="email" id="mce-EMAIL" placeholder="Adresse mail" required></input>
-                <div aria-hidden="true">
-                  <input type="text" name="b_17a0be9527ab15dda24728fbe_f444bebad9" tabIndex="-1" value=""></input>
-                </div>
-                  <div className="optionalParent">
-                      <div className="clear foot">
-                          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"></input>
-                          <p className="brandingLogo">
-                            <a href="http://eepurl.com/hOsTh5" title="Mailchimp - email marketing made easy and fun">
-                              <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></img>
-                            </a>
-                          </p>
-                      </div>
+                  <div className={styles.inputBlock}>
+                    <input type="email" value="" name="EMAIL" className={styles.email} id="mce-EMAIL" placeholder="Adresse mail" value={searchString} onChange={(e) => setSearchString(e.target.value)} required></input>
+                    <div className="optionalParent">
+                        <div className="clear foot">
+                            <input type="submit" value="ok" name="subscribe" id="mc-embedded-subscribe" className={styles.subscribe}></input>
+                        </div>
+                    </div>
                   </div>
               </div>
           </form>
