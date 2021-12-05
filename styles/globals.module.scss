@@ -78,8 +78,6 @@
     margin: 0 auto;
     z-index: 99999;
     position: relative;
-
-    
 }
 
 .fullContainer, .container {
@@ -91,7 +89,7 @@
         text-transform: uppercase;
     }
 
-    h1, p, label, h2, h3, h4, li, span {
+    h1, p, label, h2, h3, h4, li, span, input {
         font-family: 'sofia_proregular';
     }
 

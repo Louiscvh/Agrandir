@@ -12,7 +12,6 @@ export default function Temoignage() {
     setIsPlaying(!isPlaying);
     isPlaying ? audio.current.pause() : audio.current.play();
     isPlaying ? audio.current.pause() : audio.current.play();
-    isPlaying ? activationText.current.innerHTML = "Activer le son" :  activationText.current.innerHTML = "Désactiver le son"
   };
 
   return (
@@ -20,14 +19,18 @@ export default function Temoignage() {
       {
         <div className={styles.temoignageBlock} ref={temoignage}>
           <div className={styles.temoignageText}>
-            <h2>Trouves toi un coin calme et <span>écoute</span> ce qu’ils en disent.</h2>
+            <h2>Trouves toi un coin calme et <span data-up>écoute</span> ce qu’ils en disent.</h2>
             <div className={styles.temoignageButtonBlock}>
                 <div
                 className={styles.temoignageButton}
                 onClick={() => playPause()}
                 >
                 <div className={styles.wrapperPath}>
-                    <svg
+                  {
+                    isPlaying ? <svg width="50" height="3" viewBox="0 0 50 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M48.5 2.5C49.0523 2.5 49.5 2.05228 49.5 1.5C49.5 0.947715 49.0523 0.5 48.5 0.5V2.5ZM0 2.5H48.5V0.5H0V2.5Z" fill="#F9BB5D"/>
+                    </svg>
+                     : <svg
                     id={"Calque1"}
                     data-name="Calque 1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -38,9 +41,11 @@ export default function Temoignage() {
                         d="M92.4,7a3.78,3.78,0,0,1-2.7-.7c-.8-.7-1.6-1.5-2.4-2.3-1.2-1.3-4.1-1.6-5.3-.2-.8.9-1.6,1.9-2.4,2.9a3.46,3.46,0,0,1-5.3.2c-.8-1.1-1.6-2.2-2.4-3.4a3.36,3.36,0,0,0-2.6-1.6,2.72,2.72,0,0,0-2.6,1.4c-.8,1.3-1.6,2.6-2.4,4C63,9.4,60.2,9.7,59,7.5L56.6,3C55.4.6,52.5.3,51.3,2.8q-1.2,2.4-2.4,5.1A3.28,3.28,0,0,1,46.2,10a3.47,3.47,0,0,1-2.7-2.1c-.8-1.8-1.6-3.4-2.4-5.1C39.9.3,37,.6,35.8,3L33.4,7.5c-1.2,2.2-4,1.9-5.3-.2-.8-1.4-1.6-2.7-2.4-4a2.72,2.72,0,0,0-2.6-1.4,3.36,3.36,0,0,0-2.6,1.6c-.8,1.2-1.6,2.3-2.4,3.4a3.46,3.46,0,0,1-5.3-.2c-.8-1-1.6-2-2.4-2.9-1.2-1.4-4.1-1-5.3.2A25.51,25.51,0,0,1,2.7,6.3,3.78,3.78,0,0,1,0,7"
                     ></path>
                     </svg>
+                  }
+                    
                 </div>
                 <div className={styles.labelButton}>
-                    <p ref={activationText} className={styles.activationText}>Activer le son</p>
+                    <p ref={activationText} className={styles.activationText}>{isPlaying ? 'Activer le son' : 'Désactiver le son'}</p>
                 </div>
                 </div>
           </div>

@@ -62,7 +62,7 @@ export default function Hero() {
                         <p>Toi aussi tu veux <span data-up>te lancer ?</span></p>
                         <p>T’inquiète pas, <span data-up>on va t’aider !</span></p>
                     </div>
-                    <small>Entregens te donne un avant goût de <span data-up="red">l’entrepreneuriat à distance</span></small>
+                    <small>Entregens te donne un avant goût de <span data-up>l’entrepreneuriat à distance</span></small>
                 </h1>
                 <div className={styles.hero__background} ref={heroBackground} data-scroll="bg"></div>
             </div>

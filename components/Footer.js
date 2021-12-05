@@ -51,7 +51,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className={styles.footerBlock}>
-        <h3>Mentions légales</h3>
+        <h3>Contact</h3>
         <ul>
           <li><a href="#">hello@entre-gens.fr</a></li>
         </ul>
