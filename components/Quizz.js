@@ -90,12 +90,15 @@ export default function Quizz() {
                 }
             }
             let question = elt[0]
-            //document.getElementById('totalQuestions').innerHTML = `${i + 1} - ${questions.length}`
-            container.innerHTML = `<h1>${question.titre}</h1>
+            document.getElementById('totalQuestions').innerHTML = `${i + 1} / ${questions.length}`
+            container.innerHTML = `<h2>${question.titre}</h2>
                 ${question.answers.map((elt,i) => {
             return `<div>
-                        <input type='radio' name='${elt.id}' value='${elt.value}' required>
-                                <label for='${elt.id}'>${elt.titre}</label>
+                        <label for='${elt.id}'>
+                          ${elt.titre}
+                          <input type='radio' name='${elt.id}' value='${elt.value}' required>
+                          <span></span>
+                        </label>
                     </div>`
             }).join('')}`
         })
@@ -107,10 +110,12 @@ export default function Quizz() {
     <section id={"4"} className={styles.quizzContainer} ref={quiz}>
         {
             <div className={styles.quizzBlock}>
-                <form></form>
-                <button className={styles.btnPrimary} data-button-next>
-                    Question Suivante
-                </button>
+              <h1 className={styles.quizzHeader}>On t’a parlé de nous, et toi ?<br></br><span>dis nous touT !</span></h1>
+              <p className={styles.quizzIntroduction}>Nous te proposons un <span>test de personnalité</span> qui permettra de te diriger vers la solution la plus adaptée à ton ( futur ) profil d’entrepreneur.</p>  
+              <form></form>
+              <button className={styles.btnPrimary} data-button-next>
+                  Question Suivante - <span id={'totalQuestions'}></span>
+              </button>
             </div>
         }
     </section>
