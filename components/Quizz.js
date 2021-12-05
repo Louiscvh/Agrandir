@@ -65,7 +65,7 @@ export default function Quizz() {
         let score = 0;
         
         const scoring = (currentScore) => {
-        score += currentScore
+          score += currentScore
         //document.getElementById('score').innerHTML = score
         }
         
@@ -78,8 +78,8 @@ export default function Quizz() {
         })
 
         const finalScreen = (title, text) => {
-          quizzTitle.current.innerHTML = `<h2>${title}</h2>`
-          quizzContent.current.innerHTML = `<p>${text}</p>`
+          quizzTitle.current.innerHTML = `${title}`
+          quizzContent.current.innerHTML = `<h4>Votre score est de <span data-up>${score}</span></h4><p>${text}</p>`
         }
         
         const changeQuestion = (id) => {
@@ -87,7 +87,7 @@ export default function Quizz() {
         currentQuestion.push(questions.filter(question => question.index == id))
         currentQuestion.map((elt, i) => {
               if(i >= questions.length) {
-                if(score > 600) finalScreen("Nous estimons que tu es prêt à te lancer, pour plus d’informations pratique,rendez-vous sur Entraide.fr !", "Nous sommes ravis de te présenter notre plateforme Entraide.fr qui pourra t’orienter dans tes premiers(ou seconds pas) d’entrepreneurs. En créant ton compte sur Entraide.fr tu rejoins une communauté de 100 000 Entrepreneurs Français et Internationaux où le mot d’ordre est entraide (c’est évident non ? ☺️). À travers un système d’hashtags tu accéderas à un contenu qui te seras entièrement personnalisé en fonction de ton profil, des articles et des salons de discussions textuels pour entrepreneurs. ") 
+                if(score > 600) finalScreen("Nous estimons que tu es prêt à te lancer, pour plus d’informations pratique, rendez-vous sur Entraide.fr !", "Nous sommes ravis de te présenter notre plateforme Entraide.fr qui pourra t’orienter dans tes premiers(ou seconds pas) d’entrepreneurs. En créant ton compte sur Entraide.fr tu rejoins une communauté de 100 000 Entrepreneurs Français et Internationaux où le mot d’ordre est entraide (c’est évident non ? ☺️). À travers un système d’hashtags tu accéderas à un contenu qui te seras entièrement personnalisé en fonction de ton profil, des articles et des salons de discussions textuels pour entrepreneurs. ") 
                 else  {
                   score = 0
                   //document.querySelector('h2').innerHTML = score
