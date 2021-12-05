@@ -54,6 +54,15 @@ export default function Footer() {
         <h3>Contact</h3>
         <ul>
           <li><a href="#">hello@entre-gens.fr</a></li>
+          <li>
+            <a href="#" className={styles.hero__social__block}>
+                  IN
+              </a>
+              <span>-</span>
+              <a href="#" className={styles.hero__social__block}>
+                  LI
+            </a>
+          </li>
         </ul>
       </div>
       <div className={styles.footerBlock}>

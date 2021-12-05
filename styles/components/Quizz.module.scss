@@ -1,24 +1,15 @@
+@import '../variables.module.scss';
+
 .quizzContainer {
     position: relative;
     z-index: 99999999999999;
     display: flex;
     .quizzBlock{
-        width: 60%;
+        width: 50%;
         .quizzHeader{
             text-transform: uppercase;
-            line-height: 35px;
-            span{
-                position: relative;
-                &::after{
-                    content: '';
-                    left: 0;
-                    bottom: -3px;
-                    position: absolute;
-                    opacity: 0.2;
-                    height: 15px;
-                    background-color: #8983D8;
-                    width: 95%;
-                }
+            span::after{
+                background-color: $purple;
             }
         }
         .quizzIntroduction{
@@ -50,14 +41,14 @@
                     -ms-user-select: none;
                     user-select: none;
                     span{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    height: 25px;
-                    width: 25px;
-                    background-color: inherit;
-                    border: 1px solid #000;
-                    border-radius: 50%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 25px;
+                        width: 25px;
+                        background-color: inherit;
+                        border: 1px solid #000;
+                        border-radius: 50%;
                     }
                     input{
                         position: absolute;

@@ -1,3 +1,5 @@
+@import '../variables.module.scss';
+
 .infos {
     margin: 100px 0px;
     position: relative;
@@ -15,6 +17,10 @@
         height: 100%;
         width: 100%;
         position: relative;
+
+        span::after {
+            background-color: $pink;
+        }
 
         .infosTitleSpan {
             margin-bottom: 100px;
