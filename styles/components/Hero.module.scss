@@ -1,3 +1,5 @@
+@import '../variables.module.scss';
+
 .hero {
     height: 100vh;
     position: relative;
@@ -31,9 +33,18 @@
         margin-block-start: 0em;
         margin-block-end: 0em;
         font-weight: 200;
+
+        & p:nth-child(1) {
+            span::after {
+                background-color: $purple;
+            }
+        }
         & p:nth-child(2) {
             text-align: right;
             margin: 100px 0px 0px 0px;
+            span::after {
+                background-color: $orange;
+            }
         }
 
 
