@@ -36,7 +36,7 @@
                     border-radius: 5px 0 0 5px;
                     color: #818181;
                     text-transform: uppercase;
-                    width: 300px;
+                    flex: 1;
                 }
                 .subscribe{
                     background: #181611;
@@ -54,11 +54,6 @@
             button {
                 margin-top: 10px;
             }
-        }
-    }
-    .footerBlock{
-        &:last-child{
-            flex: 2;
         }
     }
     @media only screen and (max-width : 1024px){
