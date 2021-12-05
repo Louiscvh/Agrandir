@@ -31,16 +31,8 @@ export default function Infos() {
     })
     let data = [
         {
-            title: 'Clara',
+            title: 'Un réseau DE PLUS DE  100 000 entrepreneurs !',
             text: 'Sur 900 000 entrepreneurs en France, Entregens réuni une communauté de 100 000 entrepreneurs français ; Web, Artisanat, Art, Marketing, Vente... Les entrepreneurs de notre communauté viennent tous de secteurs variés ce qui fait la force de notre association.'
-        },
-        {
-            title: 'Lina',
-            text: 'Avec le Covid et le confinement, on vous entend, c’est DUR ! Entre l’isolement, le stress, la déprime... C’est pourquoi on vous propose via notre nouvelle plateforme d’entre-aide un blog et une communauté qui sauront vous mettre en contact avec toute sorte d’entrepreneurs ! '
-        },
-        {
-            title: 'Yves',
-            text: 'Il se balade de droite à gauche dans l école en pensant à son avenir.'
         }
     ]
     return (
@@ -55,16 +47,5 @@ export default function Infos() {
                     }
             </div>
         </section>
-    )
-}
-
-export function InfosBlock(props) {
-    return (
-        <div className={styles.infosContent} data-appear>
-            <div className={styles.infoDetails}>
-                <h3 className={styles.infoTitle}>{props.title}</h3>
-                <p className={styles.infoText}>{props.text}</p>
-            </div>
-        </div>
     )
 }
