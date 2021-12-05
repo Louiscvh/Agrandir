@@ -21,13 +21,13 @@
             background-color: $pink;
         }
 
-        .infosTitleSpan {
-            margin-bottom: 100px;
+        h2{
+            margin-bottom: 20px;
         }
 
 
         .infosContent {
-            width: 80%;
+            width: 40%;
             margin-bottom: 175px;
             transition: all 0.3s;
             display: flex;
@@ -36,12 +36,17 @@
             .infoDetails{
                 display: flex;
                 flex-direction: column;
-                max-width: 500px;
         
                 h3 {
                     font-size: 1.2rem;
                     margin-block-start: 0em;
-                    margin-block-end: 0em;
+                    margin-block-end: 20px;
+                    text-transform: uppercase;
+                    color: $grey;
+                    font-weight: unset;
+                    span{
+                        color: $pink;
+                    }
                 }
                 
                 p {
