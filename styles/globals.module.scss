@@ -45,22 +45,65 @@
     font-family: 'sofia_prolight';
     src: url('./fonts/sofia_pro_light_az-webfont.woff2') format('woff2'),
          url('./fonts/sofia_pro_light_az-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: light;
+    font-style: light;
 
 }
 
+.container, .heroContainer {
+    span[data-up] {
+        position: relative;
+        height: auto;
+        font-weight: bold;
+
+        &::after {
+            content: '';
+            z-index: -1;
+            position: absolute;
+            left: 0;
+            top: 60%;
+            height: 20px;
+            width: 100%;
+            display: inline-block;
+            background-color: red;
+        }
+    }
+}
+
+
 .scrollbar {
-    height: 50px;
-    width: 50px;
+    height: 65px;
+    width: 65px;
     background-color: black;
-    border-radius: 150px;
     position: fixed;
     z-index: 1;
-    overflow: hidden;
     left: 5%;
     bottom: 5%;
     transition: 0.3s ease;
+    border-radius: 150px;
+    z-index: 999999;
+
+    .scrollbarWrapper {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        border-radius: 150px;
+        position: absolute;
+        top: 0;
+    }
+
+    &::before {
+        content: '( Scroll )';
+        text-align: center;
+        width: 100%;
+        display: block;
+        position: relative;
+        top: -25px;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        opacity: 50%;
+        font-family: 'sofia_proregular';
+    }
 
     .scrollbarIndicator{
         position: absolute;
@@ -80,25 +123,45 @@
 
 .cursor {
     position: absolute;
-    z-index: 99999999999;
+    z-index: 9999999999;
     height: 12px;
     width: 12px;
     background-color: pink;
     border-radius: 150px;
 }
 
-.container {
+.heroContainer {
     width: 90%;
     margin: 0 auto;
+}
 
-    h1, h2{
+.container {
+    width: 75%;
+    margin: 0 auto;
+    z-index: 99999;
+    position: relative;
+
+    
+}
+
+.heroContainer, .container {
+    a{
         font-family: 'sequel_100_black55';
     }
 
-    p,label, h3 , li {
+    h2 {
+        text-transform: uppercase;
+    }
+
+    h1, p, label, h2, h3, h4, li {
         font-family: 'sofia_proregular';
     }
+
+    a{
+        text-decoration: none;
+    }
 }
+
 
 
 

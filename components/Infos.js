@@ -46,7 +46,7 @@ export default function Infos() {
     return (
         <section id={"2"} className={styles.infos}>
             <div className={styles.infosContainer} ref={infos}>
-                <h2>Entregens t’aide avec ton statut d’entrepreneur,</h2>
+                <h2>Entregens t’accompagne dans tes démarches ✨</h2>
                 <p className={styles.infosTitleSpan}>Tristique diam sollicitudin praesent</p>
                     {
                         data.map((elt, i) => {

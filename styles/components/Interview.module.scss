@@ -23,8 +23,13 @@
                 bottom: 0px;
                 margin: 3%;
                 color: #000;
-                height: 70px;
-                width: 70px;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #DD5068;
+                border-radius: 150px;
                 .wrapperPath{
                     overflow: hidden;
                     width: 50px;
@@ -32,7 +37,7 @@
                         width: 140px;
                         path{
                             fill: none;
-                            stroke: rgba(0, 0, 0, 0.5);
+                            stroke: rgba(255, 255, 255);
                             stroke-width: 2px;
                             animation: soundWave 2s linear infinite;
                             transition: all 0.8s ease;

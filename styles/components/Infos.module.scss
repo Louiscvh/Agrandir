@@ -17,21 +17,16 @@
         position: relative;
 
         .infosTitleSpan {
-            margin-left: 10%;
             margin-bottom: 100px;
         }
 
-        h2 {
-            margin-left: 10%;
-        }
 
         .infosContent {
             width: 80%;
-            margin: 0 auto;
             margin-bottom: 175px;
             transition: all 0.3s;
             display: flex;
-            height: 45vh;
+            height: 40vh;
         
             .infoDetails{
                 display: flex;

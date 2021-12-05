@@ -54,17 +54,19 @@ export default function Home() {
       </Head>
       <div className={styles.cursor} ref={cursor}></div>
       <div ref={scrollbar} className={styles.scrollbar} onClick={() => scrollToTop(0)}>
-        <div ref={scrollbarIndicator} className={styles.scrollbarIndicator}>
+        <div className={styles.scrollbarWrapper}>
+          <div ref={scrollbarIndicator} className={styles.scrollbarIndicator}>
+          </div>
         </div>
         <svg width="20" height="34" viewBox="0 0 20 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11.25 2C11.25 1.30964 10.6904 0.75 10 0.75C9.30964 0.75 8.75 1.30964 8.75 2L11.25 2ZM9.11612 32.8839C9.60427 33.372 10.3957 33.372 10.8839 32.8839L18.8388 24.9289C19.327 24.4408 19.327 23.6493 18.8388 23.1612C18.3507 22.673 17.5592 22.673 17.0711 23.1612L10 30.2322L2.92893 23.1612C2.44078 22.673 1.64932 22.673 1.16116 23.1612C0.673009 23.6493 0.673009 24.4408 1.16116 24.9289L9.11612 32.8839ZM8.75 2L8.75 32L11.25 32L11.25 2L8.75 2Z" fill="#F2F2F2" />
         </svg>
       </div>
-      <div className={styles.container}>
+      <div className={styles.heroContainer}>
         <Hero />
       </div>
-        <Infos />
       <div className={styles.container}>
+        <Infos />
         <Interview />
         <Quizz />
         <Faq />

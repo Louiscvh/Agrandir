@@ -57,23 +57,26 @@ export default function Footer() {
         </ul>
       </div>
       <div className={styles.footerBlock}>
-        <form onSubmit={subscribe}>
-          <h3>Newsletter</h3>
-          <input
-            id="email-input"
-            name="email"
-            placeholder="you@awesome.com"
-            ref={inputEl}
-            required
-            type="email"
-          />
-          <div>
-            {message
-              ? message
-              : `I'll only send emails when new content is posted. No spam.`}
-          </div>
-          <button type="submit">{"S'abonner"}</button>
-        </form>
+        <div id="mc_embed_signup">
+          <form action="https://gmail.us4.list-manage.com/subscribe/post?u=17a0be9527ab15dda24728fbe&amp;id=f444bebad9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+              <div id="mc_embed_signup_scroll">
+                <input type="email" value="" name="EMAIL" className="email" id="mce-EMAIL" placeholder="Adresse mail" required></input>
+                <div aria-hidden="true">
+                  <input type="text" name="b_17a0be9527ab15dda24728fbe_f444bebad9" tabIndex="-1" value=""></input>
+                </div>
+                  <div className="optionalParent">
+                      <div className="clear foot">
+                          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"></input>
+                          <p className="brandingLogo">
+                            <a href="http://eepurl.com/hOsTh5" title="Mailchimp - email marketing made easy and fun">
+                              <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></img>
+                            </a>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </form>
+        </div>
       </div>
     </footer>
   );
