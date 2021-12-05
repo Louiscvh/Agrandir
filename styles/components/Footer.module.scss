@@ -8,6 +8,9 @@
     margin-bottom: 30px;
     .footerBlock{
         flex: 1;
+        h3{
+            text-transform: uppercase;
+        }
         ul{
             list-style: none;
             padding-left: 0;
