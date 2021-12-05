@@ -94,9 +94,9 @@ export default function Quizz() {
             container.innerHTML = `<h2>${question.titre}</h2>
                 ${question.answers.map((elt,i) => {
             return `<div>
-                        <label for='${i}'>
+                        <label for='options'>
                           ${elt.titre}
-                          <input type='radio' name='${i}' value='${elt.value}' required>
+                          <input type='radio' name='options' value='${elt.value}' required>
                           <span></span>
                         </label>
                     </div>`
