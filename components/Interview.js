@@ -68,7 +68,7 @@ export default function Temoignage() {
     }
     document.querySelector('#control').addEventListener('click', () => {
       if (document.querySelector('#control').classList.contains('play')) {
-        startTyping(text, 50, "temoignage");
+        startTyping(text, 50, "temoignage")
         audio.current.play()
         activationText.current.innerHTML = 'Désactiver le son'
         document.querySelector('#control').setAttribute('class', 'pause')
