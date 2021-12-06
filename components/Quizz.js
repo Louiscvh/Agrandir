@@ -125,7 +125,7 @@ export default function Quizz() {
     <section id={"4"} className={styles.quizzContainer}>
       {
         <div className={styles.quizzBlock}>
-          <h2 className={styles.quizzHeader} ref={quizzTitle}>On t’a parlé de nous, et toi ?<span data-up> dis nous touT !</span></h2>
+          <h2 className={styles.quizzHeader} ref={quizzTitle}>On t’a parlé de nous, et toi ? <span data-up>dis nous tout !</span></h2>
           <div ref={quizzContent}>
             <p className={styles.quizzIntroduction}>Nous te proposons un <span>test de personnalité</span> qui permettra de te diriger vers la solution la plus adaptée à ton ( futur ) profil d’entrepreneur.</p>
             <form></form>
