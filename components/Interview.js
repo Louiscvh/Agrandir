@@ -87,9 +87,7 @@ export default function Temoignage() {
         pauseTyping()
         audio.current.pause()
         activationText.current.innerHTML = 'Activer le son'
-        document.querySelector('#control div').innerHTML = `<svg width="50" height="3" viewBox="0 0 50 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M48.5 2.5C49.0523 2.5 49.5 2.05228 49.5 1.5C49.5 0.947715 49.0523 0.5 48.5 0.5V2.5ZM0 2.5H48.5V0.5H0V2.5Z" fill="#F9BB5D" />
-      </svg>`
+        document.querySelector('#control div').innerHTML = `<svg data-v-1fd0ec12="" x="0px" y="0px" viewBox="0 0 92.4 11" xml:space="preserve"><path data-v-1fd0ec12="" d="M92.4,5.5h-2.7h-2.4H82h-2.4h-5.3h-2.4h-2.6h-2.6h-2.4H59h-2.4h-5.3h-2.4h-2.7h-2.7h-2.4h-5.3h-2.4h-5.3h-2.4h-2.6h-2.6h-2.4h-5.3h-2.4l-5.3,0l-2.4,0H0" class=""></path></svg>`
         document.querySelector('#control').setAttribute('class', 'play')
       }
     });
