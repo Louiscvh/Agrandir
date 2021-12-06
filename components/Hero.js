@@ -16,14 +16,9 @@ export default function Hero() {
     useEffect(() => {
         window.addEventListener('scroll', () => {
             pos = window.scrollY / 200
-        })
-    }, [pos])
-
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
             if (window.scrollY < 1280) heroBackground.current.style.transform = `scale(${(window.scrollY + 250) * 2})`;
         })
-    });
+    }, [pos])
 
     const Model = () => {
         const mesh = useRef()

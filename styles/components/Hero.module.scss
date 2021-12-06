@@ -29,14 +29,16 @@
         flex-direction: column;
         width: 70%;
         text-transform: uppercase;
-        font-size: 2.5rem;
         margin-block-start: 0em;
         margin-block-end: 0em;
         font-weight: 200;
 
-        & p:nth-child(1) {
-            span::after {
-                background-color: $purple;
+        & p{
+            font-size: 2.5rem;
+            &:nth-child(1) {
+                span::after {
+                    background-color: $purple;
+                }
             }
         }
         & p:nth-child(2) {
@@ -90,6 +92,7 @@
                     margin-block-start: 0em;
                     margin-block-end: 0em;
                     font-size: 1rem;
+                    font-family: 'sequel_100_black55';
                 }
 
                 span {
