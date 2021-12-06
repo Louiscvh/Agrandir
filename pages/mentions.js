@@ -7,7 +7,9 @@ export default function Mentions() {
     <>
     <section className={styles.mentions}>
         <div className={styles.container}>
-            <a href="/">Retour</a>
+            <Link href="/">
+            <a>Retour</a>
+            </Link>
             <h1>Conditions générales d'utilisation</h1>
                 <p>Client : tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.
                     Prestations et Services : https://www.entre-gens.fr met à disposition des Clients :
