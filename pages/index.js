@@ -86,8 +86,8 @@ export default function Home() {
           padding: 0px;
         }
 
-        section:not(:first-of-type){
-          padding: 100px 20px;
+        section{
+          padding: 100px 0px;
         }
       `}</style>
     </>
