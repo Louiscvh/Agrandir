@@ -84,7 +84,7 @@ export default function Temoignage() {
             ></path>
             </svg>`
       } else {
-        pauseTyping();
+        pauseTyping()
         audio.current.pause()
         activationText.current.innerHTML = 'Activer le son'
         document.querySelector('#control div').innerHTML = `<svg width="50" height="3" viewBox="0 0 50 3" fill="none" xmlns="http://www.w3.org/2000/svg">
