@@ -15,7 +15,6 @@ export default function Infos() {
         const io = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    console.log(entry.intersectionRect)
                     entry.target.setAttribute("style", "opacity: 1; transform: translateY(0px);")
                 } else {
                     entry.target.setAttribute("style", "opacity: 0; transform: translateY(30px);")

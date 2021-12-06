@@ -2,11 +2,15 @@ import styles from "../styles/components/Footer.module.scss";
 import React, { useRef, useState } from 'react';
 
 export default function Footer() {
-  const [searchString, setSearchString] = useState();
+  const [searchString, setSearchString] = useState('');
     // 1. Create a reference to the input so we can fetch/clear it's value.
   const inputEl = useRef(null);
   // 2. Hold a message in state to handle the response from our API.
   const [message, setMessage] = useState('');
+
+  const handleChange = (event) => {
+    setSearchString(event.target.value)
+  }
 
   const subscribe = async (e) => {
     e.preventDefault();
@@ -30,6 +34,8 @@ export default function Footer() {
 
       return;
     }
+
+    
 
     // 5. Clear the input value and show a success message.
     inputEl.current.value = '';
@@ -71,7 +77,7 @@ export default function Footer() {
           <form action="https://gmail.us4.list-manage.com/subscribe/post?u=17a0be9527ab15dda24728fbe&amp;id=f444bebad9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
               <div id="mc_embed_signup_scroll">
                   <div className={styles.inputBlock}>
-                    <input type="email" value="" name="EMAIL" className={styles.email} id="mce-EMAIL" placeholder="Adresse mail" value={searchString} onChange={(e) => setSearchString(e.target.value)} required></input>
+                    <input type="email" value="" name="EMAIL" className={styles.email} id="mce-EMAIL" placeholder="Adresse mail" value={searchString} onChange={handleChange} required></input>
                     <div className="optionalParent">
                         <div className="clear foot">
                             <input type="submit" value="ok" name="subscribe" id="mc-embedded-subscribe" className={styles.subscribe}></input>
