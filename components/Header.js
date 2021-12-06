@@ -12,13 +12,6 @@ export default function Header() {
     sections.forEach((el, i) => {
      nav.innerHTML += `<a href="#${el.id}"><div data-scroll="nav"></div></a>`
     });
-
-    document.querySelectorAll("nav a").forEach((el, i) => {
-      el.addEventListener("click", (e) => {
-        document.querySelectorAll("nav a").forEach((el, i) => {
-        });
-      });
-    });
   });
   return (
     <header className={styles.header}>
