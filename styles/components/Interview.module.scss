@@ -8,7 +8,7 @@
         overflow-y: scroll;
         width: 100%;
         margin-left: auto;
-        height: 500px;
+        min-height: 500px;
         display: flex;
         justify-content: flex-end;
         &::-webkit-scrollbar{
@@ -100,3 +100,9 @@
         transform: translateX(-63px)
     }
 }
+
+@media only screen and (max-width : 1024px){
+    .temoignageText {
+        width: 100%!important;
+    }
+}   
