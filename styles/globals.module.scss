@@ -84,6 +84,11 @@
     margin: 0 auto;
     z-index: 99999;
     position: relative;
+
+    section {
+        padding: 120px 0px;
+    }
+    
     a,
     button {
         padding: 20px;

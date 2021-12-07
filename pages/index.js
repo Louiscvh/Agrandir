@@ -36,8 +36,10 @@ export default function Home() {
       scrollbarIndicator.current.style.height = `${scrollPourcent}%`;
       if (scrollPourcent > 0 && scrollPourcent < 5) document.querySelector('#canvas canvas').style.transform = `translateX(0%)`
       if (scrollPourcent > 5 && scrollPourcent < 45) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
-      if (scrollPourcent > 45  && scrollPourcent < 60) document.querySelector('#canvas canvas').style.transform = `translateX(-30%)`
+      if (scrollPourcent > 45 && scrollPourcent < 60) document.querySelector('#canvas canvas').style.transform = `translateX(-30%)`
       if (scrollPourcent > 60 && scrollPourcent < 100) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
+      if (scrollPourcent > 75) document.querySelector('#canvas canvas').style.opacity = `0`
+      else document.querySelector('#canvas canvas').style.opacity = `1`
       if (scrollPourcent > 100) {
         scrollbar.current.style.transform = 'translateY(-240px)'
       }
@@ -54,34 +56,35 @@ export default function Home() {
         <link rel="icon" href="../assets/img/favicon.svg" />
         <link rel="canonical" href="https://www.entre-gens.fr/" />
         <meta name="msapplication-config" content="browserconfig.xml"></meta>
-        <meta property="og:url"                content="https://www.entre-gens.fr/" />
-        <meta property="og:type"               content="website" />
-        <meta property="og:title"              content="Entre gens" />
-        <meta property="og:description"        content="Sur 900 000 entrepreneurs en France, on a réunis une communauté de 100 000 entrepreneurs français: Web, Artisanat, Art, Marketing, Vente... Les entrepreneurs de notre communauté viennent de tous les secteurs possibles et imaginables, ce qui fait la force de notre association." />
-        <meta property="og:image"              content="../assets/img/logo.webp" />
+        <meta property="og:url" content="https://www.entre-gens.fr/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Entre gens" />
+        <meta property="og:description" content="Sur 900 000 entrepreneurs en France, on a réunis une communauté de 100 000 entrepreneurs français: Web, Artisanat, Art, Marketing, Vente... Les entrepreneurs de notre communauté viennent de tous les secteurs possibles et imaginables, ce qui fait la force de notre association." />
+        <meta property="og:image" content="../assets/img/logo.webp" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@Entregens" />
         <meta name="twitter:creator" content="@Agrandir" />
-        <meta property="og:url" content="https://www.entre-gens.fr/"/>
+        <meta property="og:url" content="https://www.entre-gens.fr/" />
         <meta property="og:title" content="Entregens" />
         <meta property="og:description" content="Sur 900 000 entrepreneurs en France, on a réunis une communauté de 100 000 entrepreneurs français: Web, Artisanat, Art, Marketing, Vente... Les entrepreneurs de notre communauté viennent de tous les secteurs possibles et imaginables, ce qui fait la force de notre association." />
         <meta property="og:image" content="../assets/img/logo.webp" />
         <link rel="dns-prefetch" href="https://www.entre-gens.fr/" />
-        <link rel="preconnect" href="https://www.entre-gens.fr/"></link>
+        <link rel="preconnect" href="https://www.entre-gens.fr/" />
 
-         
         <script async src={"https://www.googletagmanager.com/gtag/js?id=G-TT2S1Y8VMN"}></script>
-        <script 
+        <script
           dangerouslySetInnerHTML={{
-                __html: `
+            __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
             gtag('config', 'G-TT2S1Y8VMN');
-            `, }}
+            `,
+          }}
         />
       </Head>
+      <div className={styles.noise}></div>
       <div className={styles.cursor} ref={cursor}></div>
       <aside ref={scrollbar} className={styles.scrollbar} onClick={() => scrollToTop(0)}>
         <div className={styles.scrollbarWrapper}>
@@ -116,13 +119,8 @@ export default function Home() {
           margin: 0px;
           padding: 0px;
         }
-
-        section{
-          padding: 100px 0px;
-        }
       `}</style>
       <noscript>Please enable Javascript !</noscript>
-     
     </>
   )
 }
