@@ -1,28 +1,11 @@
 import styles from "../styles/components/Interview.module.scss";
 import { useEffect, useRef, useState } from "react";
-import Typewriter from 'typewriter-effect/dist/core';
 
 export default function Temoignage() {
   const temoignage = useRef(null);
   const audio = useRef(null);
   const activationText = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  /* 
-    useEffect(() => {
-      
-      let div = document.querySelector('.test')
-  
-      let typewriter = new Typewriter(div, {
-        loop: true,
-        delay: 75,
-      });
-  
-      typewriter.typeString("J'ai 29 ans et je suis créatrice de bijoux. Et pourtant j'étais partie pour être prothésiste dentaire ! C'est en 2020 que j'ai décidé de tenter l'aventure. J'ai pris le statut d'auto-entrepreneur et j'ai commencé à vendre mes bijoux tout en gardant mon métier, car j’avais un peu peur de rater mes débuts, je n’avais pas trop d’infos,  je me suis un peu précipité. Bref... 1 an est passé et j’ai donc décidé de me poser et de reprendre les choses à 0, c’est-à-dire savoir comment organiser mon emploi du temps, gérer et prévoir ma trésorerie et surtout, important pour moi, apprendre à faire une transition de salarié à entrepreneur. Et c’est là qu’un je suis tombé sur l’article d’une asso qu’un pote m’avait partagé, et cétait la votre, Entregens, c’était comme une révélation pour moi, il y avait vraiment tout ce dont j’avais besoin. Quelques temps après avoir eu les infos dont j’avais besoin et avoir été sûre que j’étais sur la bonne voie, c'est devenu mon activité principale; Grâce à entregens et à l’argent que j’avais de côté, j’ai pu commencer à vivre de ma passion et de mon talent !")
-      
-      isPlaying ? typewriter.start() : typewriter.stop()
-        
-    }, [isPlaying])
-    */
+
   var text = "J'ai 29 ans et je suis créatrice de bijoux. Et pourtant j'étais partie pour être prothésiste dentaire ! C'est en 2020 que j'ai décidé de tenter l'aventure. J'ai pris le statut d'auto-entrepreneur et j'ai commencé à vendre mes bijoux tout en gardant mon métier, car j’avais un peu peur de rater mes débuts, je n’avais pas trop d’infos,  je me suis un peu précipité. Bref... 1 an est passé et j’ai donc décidé de me poser et de reprendre les choses à 0, c’est-à-dire savoir comment organiser mon emploi du temps, gérer et prévoir ma trésorerie et surtout, très important pour moi, apprendre à faire une transition de salarié à entrepreneur. Et c’est là qu’un je suis tombé sur l’article d’une asso qu’un pote m’avait partagé, et cétait la votre, Entregens, c’était comme une révélation pour moi, il y avait vraiment tout ce dont j’avais besoin. Quelques temps après avoir eu les infos dont j’avais besoin et avoir été sûre que j’étais sur la bonne voie, c'est devenu mon activité principale; Grâce à entregens et à l’argent que j’avais de côté, j’ai pu commencer à vivre de ma passion et de mon talent !";
   var delay = 50;
   var currentChar = 1;

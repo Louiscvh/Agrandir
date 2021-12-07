@@ -1,92 +1,122 @@
-@import '../variables.module.scss';
+@import "../variables.module.scss";
 
-.temoignageContainer{
+.temoignageContainer {
     position: relative;
-    .temoignageBlock{
+    .temoignageBlock {
         -ms-overflow-style: none;
         scrollbar-width: none;
         overflow-y: scroll;
         width: 100%;
         margin-left: auto;
         min-height: 500px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
         justify-content: flex-end;
-        &::-webkit-scrollbar{
+        &::-webkit-scrollbar {
             display: none;
         }
-        .temoignageButtonBlock{
+        .temoignageButtonBlock {
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
-            [data-control]{
+            [data-control] {
                 z-index: 99;
                 padding: 10px;
                 bottom: 0px;
                 color: #000;
                 height: 70px;
                 width: auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
                 align-items: center;
-                .wrapperPath{
+                .wrapperPath {
                     overflow: hidden;
                     width: 50px;
                     position: relative;
                     z-index: 1;
-                    svg{
+                    svg {
                         width: 140px;
+                        -webkit-animation: soundWave 2s linear infinite;
                         animation: soundWave 2s linear infinite;
-                            transition: all 0.8s ease;
-                        path{
+                        -webkit-transition: all 0.8s ease;
+                        -o-transition: all 0.8s ease;
+                        transition: all 0.8s ease;
+                        path {
                             fill: none;
-                            stroke: #F9BB5D;
+                            stroke: #f9bb5d;
                             stroke-width: 2px;
-                            
                         }
                     }
                 }
-                .labelButton{
+                .labelButton {
                     height: 40px;
                     width: 200px;
                     position: relative;
                     z-index: 0;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
                     align-items: center;
-                    p{
+                    p {
                         text-decoration: none;
                         display: block;
                         z-index: 100;
                         position: relative;
+                        -webkit-transition: all 0.3s ease;
+                        -o-transition: all 0.3s ease;
                         transition: all 0.3s ease;
                         margin: 0;
-                        color:#000;
+                        color: #000;
                         overflow: hidden;
                         padding: 5px 0px 5px 30px;
+                        -webkit-transform: translateX(-20px);
+                        -ms-transform: translateX(-20px);
                         transform: translateX(-20px);
                         opacity: 0;
+                        -webkit-transform-origin: 0% 50%;
+                        -ms-transform-origin: 0% 50%;
                         transform-origin: 0% 50%;
-                        font-family: 'sequel_100_black55';
+                        font-family: "sequel_100_black55";
                         font-size: 0.75rem;
                         text-transform: uppercase;
                     }
                 }
-                &:hover{
-                    p{
+                &:hover {
+                    p {
+                        -webkit-transform: translateX(-10px);
+                        -ms-transform: translateX(-10px);
                         transform: translateX(-10px);
                         opacity: 1;
-                        transition: all .3s cubic-bezier(.77,0,.175,1);
+                        -webkit-transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+                        -o-transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+                        transition: all 0.3s cubic-bezier(0.77, 0, 0.175, 1);
+                        -webkit-transform-origin: 0%;
+                        -ms-transform-origin: 0%;
                         transform-origin: 0%;
                         text-align: left;
                     }
                 }
             }
         }
-        .temoignageText{
+        .temoignageText {
             width: 40%;
-            h2{
+            h2 {
                 font-size: 2.5rem;
                 text-transform: uppercase;
-                span{
-                    &::after{
+                span {
+                    &::after {
                         background-color: $orange;
                     }
                 }
@@ -94,21 +124,33 @@
         }
     }
 }
-  
-@keyframes soundWave {
+
+@-webkit-keyframes soundWave {
     0% {
         -webkit-transform: translateX(0);
-        transform: translateX(0)
+        transform: translateX(0);
     }
 
     to {
         -webkit-transform: translateX(-63px);
-        transform: translateX(-63px)
+        transform: translateX(-63px);
     }
 }
 
-@media only screen and (max-width : 1024px){
-    .temoignageText {
-        width: 100%!important;
+@keyframes soundWave {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
-}   
+
+    to {
+        -webkit-transform: translateX(-63px);
+        transform: translateX(-63px);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .temoignageText {
+        width: 100% !important;
+    }
+}

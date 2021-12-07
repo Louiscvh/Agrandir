@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Images from "next/image";
 import styles from "../styles/components/Header.module.scss";
 import { useEffect } from "react";
@@ -15,7 +14,7 @@ export default function Header() {
   });
   return (
     <header className={styles.header}>
-      <Images src={logo} className={styles.logo} height="50" width="50"></Images>
+      <Images src={logo} className={styles.logo} height="50" width="50" alt="logo"></Images>
       <nav className={styles.navigation}></nav>
     </header>
   );

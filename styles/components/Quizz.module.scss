@@ -1,10 +1,12 @@
-@import '../variables.module.scss';
+@import "../variables.module.scss";
 
 .quizzContainer {
     position: relative;
     z-index: 99999999999999;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    .quizzBlock{
+    .quizzBlock {
         width: 50%;
 
         p {
@@ -22,30 +24,30 @@
             font-size: 2rem;
         }
 
-        span::after{
+        span::after {
             background-color: $purple;
         }
-        .quizzHeader{
+        .quizzHeader {
             text-transform: uppercase;
-            span::after{
+            span::after {
                 background-color: $purple;
             }
         }
-        .quizzIntroduction{
+        .quizzIntroduction {
             text-transform: uppercase;
             margin: 40px 0;
-            span{
-                color: #8983D8;
+            span {
+                color: #8983d8;
             }
         }
-        form{
-            div{
-                background-color: #F1F1F1;
+        form {
+            div {
+                background-color: #f1f1f1;
                 color: #494949;
-                padding:20px;
+                padding: 20px;
                 border-radius: 10px;
                 margin-bottom: 30px;
-                label{
+                label {
                     color: #494949;
                     text-transform: uppercase;
                     padding-left: 35px;
@@ -57,7 +59,7 @@
                     -moz-user-select: none;
                     -ms-user-select: none;
                     user-select: none;
-                    span{
+                    span {
                         position: absolute;
                         top: 0;
                         left: 0;
@@ -67,7 +69,7 @@
                         border: 1px solid #000;
                         border-radius: 50%;
                     }
-                    input{
+                    input {
                         position: absolute;
                         opacity: 0;
                         cursor: pointer;
@@ -76,15 +78,15 @@
                         z-index: 1;
                         height: 100%;
                     }
-                    &:hover input ~ span{
+                    &:hover input ~ span {
                         background-color: #fff;
                     }
-                    input:checked ~ span{
+                    input:checked ~ span {
                         background-color: #fff;
-                        border:1px solid #000;
+                        border: 1px solid #000;
                     }
-                    span{
-                        &:after{
+                    span {
+                        &:after {
                             content: "";
                             position: absolute;
                             display: none;
@@ -94,9 +96,9 @@
                             height: 15px;
                             border-radius: 50%;
                             background: black;
-                        }   
+                        }
                     }
-                    input:checked ~ span:after{
+                    input:checked ~ span:after {
                         display: block;
                     }
                 }
@@ -105,9 +107,9 @@
     }
 }
 
-@media only screen and (max-width : 1024px){
-    .quizzContainer{
-        .quizzBlock{
+@media only screen and (max-width: 1024px) {
+    .quizzContainer {
+        .quizzBlock {
             width: 100%;
         }
     }

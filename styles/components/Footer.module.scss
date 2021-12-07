@@ -1,50 +1,61 @@
-.footer{
+.footer {
     z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     position: relative;
     width: 100%;
     margin-bottom: 30px;
-    .footerBlock{
+    .footerBlock {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
         flex: 1;
-        h3{
+        h3 {
             text-transform: uppercase;
         }
-        ul{
+        ul {
             list-style: none;
             padding-left: 0;
             padding-top: 20px;
-            li{
+            li {
                 padding-bottom: 20px;
                 font-size: 14px;
                 text-transform: uppercase;
-                a{
+                a {
                     text-decoration: none;
                     border-bottom: 1px solid #818181;
                     padding-bottom: 10px;
                 }
             }
             li,
-            a{
-                color:#818181;
+            a {
+                color: #818181;
             }
         }
         form {
             width: 100%;
             padding-top: 0;
-            
-            .inputBlock{
+
+            .inputBlock {
+                display: -webkit-box;
+                display: -ms-flexbox;
                 display: flex;
-                .email{
+                .email {
                     border-radius: 5px 0 0 5px;
                     color: #818181;
                     text-transform: uppercase;
+                    -webkit-box-flex: 1;
+                    -ms-flex: 1;
                     flex: 1;
                 }
-                .subscribe{
+                .subscribe {
                     background: #181611;
-                    color: #F9F9F9;
+                    color: #f9f9f9;
                     width: 65px;
                     border-radius: 0 5px 5px 0;
                 }
@@ -55,13 +66,16 @@
                 padding: 15px;
                 background-color: transparent;
             }
-    
+
             button {
                 margin-top: 10px;
             }
         }
     }
-    @media only screen and (max-width : 1024px){
+    @media only screen and (max-width: 1024px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }

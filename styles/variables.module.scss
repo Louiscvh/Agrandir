@@ -1,79 +1,77 @@
-
 @font-face {
-    font-family: 'sequel_100_black55';
-    src: url('./fonts/sequel-webfont.woff2') format('woff2'),
-         url('./fonts/sequel-webfont.woff') format('woff');
+    font-family: "sequel_100_black55";
+    src: url("./fonts/sequel-webfont.woff2") format("woff2"), url("./fonts/sequel-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'sofia_proregular';
-    src: url('./fonts/sofia_pro_regular_az-webfont.woff2') format('woff2'),
-         url('./fonts/sofia_pro_regular_az-webfont.woff') format('woff');
+    font-family: "sofia_proregular";
+    src: url("./fonts/sofia_pro_regular_az-webfont.woff2") format("woff2"),
+        url("./fonts/sofia_pro_regular_az-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'sofia_prosemibold';
-    src: url('./fonts/sofia_pro_semi_bold_az-webfont.woff2') format('woff2'),
-         url('./fonts/sofia_pro_semi_bold_az-webfont.woff') format('woff');
+    font-family: "sofia_prosemibold";
+    src: url("./fonts/sofia_pro_semi_bold_az-webfont.woff2") format("woff2"),
+        url("./fonts/sofia_pro_semi_bold_az-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'sofia_promedium';
-    src: url('./fonts/sofia_pro_medium_az-webfont.woff2') format('woff2'),
-         url('./fonts/sofia_pro_medium_az-webfont.woff') format('woff');
+    font-family: "sofia_promedium";
+    src: url("./fonts/sofia_pro_medium_az-webfont.woff2") format("woff2"),
+        url("./fonts/sofia_pro_medium_az-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'sofia_prolight';
-    src: url('./fonts/sofia_pro_light_az-webfont.woff2') format('woff2'),
-         url('./fonts/sofia_pro_light_az-webfont.woff') format('woff');
+    font-family: "sofia_prolight";
+    src: url("./fonts/sofia_pro_light_az-webfont.woff2") format("woff2"),
+        url("./fonts/sofia_pro_light_az-webfont.woff") format("woff");
     font-weight: light;
     font-style: light;
 }
 
-$font-family-regular: 'sofia_promedium';
-$font-family-bold:    'sofia_prosemibold';
-$font-family-condensedregular:  'Barlow', sans-serif;
-$font-family-condensedbold:     'Barlow', sans-serif;
-$btn-font-weight:     bold;
+$font-family-regular: "sofia_promedium";
+$font-family-bold: "sofia_prosemibold";
+$font-family-condensedregular: "Barlow", sans-serif;
+$font-family-condensedbold: "Barlow", sans-serif;
+$btn-font-weight: bold;
 
 $font-root-size: 16px;
 
 //COLOR
-$pink: #DD5068;
-$orange: #F9BB5D;
-$purple: #8983D8;
+$pink: #dd5068;
+$orange: #f9bb5d;
+$purple: #8983d8;
 $black: #111111;
-$white: #F2F2F2;
-$grey : #818181;
+$white: #f2f2f2;
+$grey: #818181;
 
 //RADIUS
 $bdr-radius: 12px;
 
 //
 //TYPE
-$headings-font-family:    $font-family-regular;
-$headings-font-weight:    bold;
-$headings-color:          $black;
-$font-size-h1:            25px;
-$font-size-h2:            22px;
-$font-size-h3:            20px;
-$font-size-h4:            18px;
-$font-size-base:          16px;
-$font-size-large:         22px;
-$font-size-xs:            12px;
+$headings-font-family: $font-family-regular;
+$headings-font-weight: bold;
+$headings-color: $black;
+$font-size-h1: 25px;
+$font-size-h2: 22px;
+$font-size-h3: 20px;
+$font-size-h4: 18px;
+$font-size-base: 16px;
+$font-size-large: 22px;
+$font-size-xs: 12px;
 
 //
 //PADDING
-$padding-base-vertical:   10px;
+$padding-base-vertical: 10px;
 $padding-base-horizontal: 20px;
 
 //

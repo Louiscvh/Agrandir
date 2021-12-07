@@ -8,7 +8,6 @@ import Image from 'next/image'
 
 let pos = 0;
 
-
 export default function Hero() {
 
     const heroBackground = useRef()
@@ -53,7 +52,7 @@ export default function Hero() {
                 </h1>
                 <div className={styles.hero__background} ref={heroBackground} data-scroll="bg"></div>
             </div>
-            <div className={styles.hero__footer}>
+            <aside className={styles.hero__footer}>
                 <div>
                     <h4>Réseaux</h4>
                     <div className={styles.hero__social}>
@@ -66,7 +65,7 @@ export default function Hero() {
                         </a>
                     </div>
                 </div>
-            </div>
+            </aside>
         </section>
     );
 }

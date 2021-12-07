@@ -66,7 +66,6 @@ export default function Quizz() {
 
     const scoring = (currentScore) => {
       score += currentScore
-      //document.getElementById('score').innerHTML = score
       if (score < 0) {
         currentQuestion.push(questions.filter(question => question.index == 1))
         indexCurrent = 1
