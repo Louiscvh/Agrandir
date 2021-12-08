@@ -24,7 +24,6 @@ export default function Home() {
   }
 
   useEffect(() => {
-    window.start.init({Palette:"palette7",Mode:"floating right",Theme:"classic",Message:"Ce site Web utilise des cookies, en poursuivant votre navigation, vous acceptez leur utilisations.",ButtonText:"Accepter",LinkText:"Lire plus",Time:"2",})
     document.addEventListener('mousemove', (e) => {
       const mouseX = e.pageX;
       const mouseY = e.pageY;
@@ -73,7 +72,6 @@ export default function Home() {
         <title>Entre gens</title>
         <meta name="description" content="Sur 900 000 entrepreneurs en France, on a réunis une communauté de 100 000 entrepreneurs français: Web, Artisanat, Art, Marketing, Vente... Les entrepreneurs de notre communauté viennent de tous les secteurs possibles et imaginables, ce qui fait la force de notre association." />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <link rel="stylesheet" type="text/css" href="https://cookieconsent.popupsmart.com/src/css/style.css" />
         <link rel="canonical" href="https://www.entre-gens.fr/" />
         <meta name="msapplication-config" content="browserconfig.xml"></meta>
         <meta property="og:url" content="https://www.entre-gens.fr/" />
@@ -102,7 +100,6 @@ export default function Home() {
             `,
           }}
         />
-        <script src="https://cookieconsent.popupsmart.com/src/js/popper.js" />
       </Head>
       <div className={styles.noise}></div>
       <div className={styles.cursor} ref={cursor}></div>
