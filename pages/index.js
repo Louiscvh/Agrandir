@@ -34,8 +34,8 @@ export default function Home() {
     window.addEventListener("scroll", () => {
       scrollPourcent = (window.scrollY / (document.body.offsetHeight - windowHeight)) * 100;
       scrollbarIndicator.current.style.height = `${scrollPourcent}%`;
-      if (scrollPourcent > 0 && scrollPourcent < 5) document.querySelector('#canvas canvas').style.transform = `translateX(0%)`
-      if (scrollPourcent > 5 && scrollPourcent < 45) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
+      if (scrollPourcent > 0 && scrollPourcent < 8) document.querySelector('#canvas canvas').style.transform = `translateX(0%)`
+      if (scrollPourcent > 8 && scrollPourcent < 45) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
       if (scrollPourcent > 45 && scrollPourcent < 60) document.querySelector('#canvas canvas').style.transform = `translateX(-30%)`
       if (scrollPourcent > 60 && scrollPourcent < 100) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
       if (scrollPourcent > 75) document.querySelector('#canvas canvas').style.opacity = `0`

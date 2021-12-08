@@ -10,7 +10,7 @@ export default function Infos() {
 
         let infosTexts = document.querySelectorAll('[data-appear]')
         let options = {
-            threshold: 0.9
+            threshold: 0.5
         };
         const io = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -43,7 +43,7 @@ export default function Infos() {
                         <h3 className={styles.infoTitle}>Un réseau de plus de <span>100 000 entrepreneurs !</span></h3>
                         <p className={styles.infoText}>Sur 900 000 entrepreneurs en France, on a réunis une communauté de 100 000 entrepreneurs français: Web, Artisanat, Art, Marketing, Vente... Les entrepreneurs de notre communauté viennent de tous les secteurs possibles et imaginables, ce qui fait la force de notre association.<br></br><br></br>
                         Sur entre-aide.fr, tu pourras retrouver un catalogue complet d’articles, conseils et informations vérifiés et écrient par des professionnels qui ont éprouvés leurs compétences dans leur domaine, ces articles traitent de l’entrepreneuriat et de tout ce qui gravite autour, santé mentale, argent, amis, télétravail etc... En plus de ça tu peux rentrer en contact avec ces professionnels et tous les autres membres de la communauté (y compris nous) grâce à nos salons textuels.</p>
-                        <a className={styles.btnPrimary}>Découvrir le site entre-aide.fr</a>
+                        <a href="" className={styles.btnPrimary}>Découvrir le site entre-aide.fr</a>
                     </div>
                 </div>
             </div>

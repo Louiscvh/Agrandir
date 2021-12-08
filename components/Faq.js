@@ -27,10 +27,11 @@ export default function Faq() {
         }
         setSelected(i)
     }
+    
   return (
     <section id={"5"} className={styles.faqContainer}>
         {faqdata.map((elt, i) => (
-                <div key={i} className={selected === i ? styles.faqBlock+' '+ styles.show : styles.faqBlock} onClick={() => toggle(i)}>
+                <div key={i} className={styles.faqBlock} onClick={() => toggle(i)}>
                     <div className={styles.faqHeader}>
                         <h2>{elt.title}</h2>
                         <div id={"crossbar"+i} className={selected === i ? styles.faqCrossContainer+' '+styles.isOpen : styles.faqCrossContainer}>
@@ -38,7 +39,7 @@ export default function Faq() {
                             <span></span>
                         </div>
                     </div>
-                    <p className={styles.faqTitle}>{elt.text}</p>
+                    <p className={selected === i ? styles.faqTitle +' '+ styles.show : styles.faqTitle}>{elt.text}</p>
                 </div>
             ))}
     </section>

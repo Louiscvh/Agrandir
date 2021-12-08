@@ -151,3 +151,13 @@
         text-align: justify;
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .fullContainer,
+    .container {
+        h2 {
+            font-size: 1.6rem!important;
+            line-height: 35px!important;
+        }
+    }
+}

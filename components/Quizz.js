@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react'
 export default function Quizz() {
   let questions = [{
     titre: "Avez-vous un projet concret ?",
-    necessary: true,
     index: 0,
     answers: [{
       titre: "Oui",
@@ -18,7 +17,6 @@ export default function Quizz() {
   },
   {
     titre: "Combien d'année d'expérience avez-vous dans ce milieu ?",
-    necessary: true,
     index: 1,
     answers: [{
       titre: "0 - 1",
@@ -36,10 +34,9 @@ export default function Quizz() {
   },
   {
     titre: "Que pensez-vous du télétravail à titre personnel ?",
-    necessary: true,
     index: 2,
     answers: [{
-      titre: "Oui à full time je kiff",
+      titre: "Oui à full time",
       value: 300
     },
     {
@@ -47,8 +44,47 @@ export default function Quizz() {
       value: 200
     },
     {
-      titre: "None",
+      titre: "Non pas fou",
       value: 0
+    }
+    ]
+  },
+  {
+    titre: "Comment imaginez vous votre vie professionelle plus tard ?",
+    index: 3,
+    answers: [{
+      titre: "Salarié dans une grande boite",
+      value: 300
+    },
+    {
+      titre: "Freelance digital nomade",
+      value: 400
+    },
+    {
+      titre: "Artisan ébéniste",
+      value: 100
+    }
+    ,
+    {
+      titre: "J'y penserai demain",
+      value: 0
+    }
+    ]
+  },
+  {
+    titre: "Quel type de personne être-vous ?",
+    index: 4,
+    answers: [{
+      titre: "Un loup indépendant",
+      value: 300
+    },
+    {
+      titre: "Un bon chef d'équipe (pas trop tyrannique)",
+      value: 400
+    },
+    {
+      titre: "Un bon salarié soumis",
+      value: 100
     }
     ]
   }
@@ -71,7 +107,6 @@ export default function Quizz() {
         indexCurrent = 1
       }
     }
-    
 
     document.querySelector('[data-button-next]').addEventListener('click', function () {
       document.querySelectorAll('input').forEach((elt) => {
@@ -85,7 +120,7 @@ export default function Quizz() {
 
     const finalScreen = (title, text) => {
       quizzTitle.current.innerHTML = `${title}`
-      quizzContent.current.innerHTML = `<h4>Votre score est de <span data-up>${score}</span></h4><p>${text}</p><button onclick="window.location.reload()" class="quizzReload">Rejouer</button>`
+      quizzContent.current.innerHTML = `<h4>Votre score est de <span data-up>${score}</span></h4><p>${text}</p><a href="https://www.entre-gens.fr/#4" id="totalQuestions">Rejouer</a>`
     }
 
     const changeQuestion = (id) => {
@@ -93,7 +128,7 @@ export default function Quizz() {
       currentQuestion.push(questions.filter(question => question.index == id))
       currentQuestion.map((elt, i) => {
         if (i >= questions.length) {
-          if (score > 500) finalScreen("Nous estimons que tu es prêt à te lancer, pour plus d’informations pratique, rendez-vous sur Entraide.fr !", "Nous sommes ravis de te présenter notre plateforme Entraide.fr qui pourra t’orienter dans tes premiers(ou seconds pas) d’entrepreneurs. En créant ton compte sur Entraide.fr tu rejoins une communauté de 100 000 Entrepreneurs Français et Internationaux où le mot d’ordre est entraide (c’est évident non ? ☺️). À travers un système d’hashtags tu accéderas à un contenu qui te seras entièrement personnalisé en fonction de ton profil, des articles et des salons de discussions textuels pour entepreneurs. ") 
+          if (score > 700) finalScreen("Nous estimons que tu es prêt à te lancer, pour plus d’informations pratique, rendez-vous sur Entraide.fr !", "Nous sommes ravis de te présenter notre plateforme Entraide.fr qui pourra t’orienter dans tes premiers(ou seconds pas) d’entrepreneurs. En créant ton compte sur Entraide.fr tu rejoins une communauté de 100 000 Entrepreneurs Français et Internationaux où le mot d’ordre est entraide (c’est évident non ? ☺️). À travers un système d’hashtags tu accéderas à un contenu qui te seras entièrement personnalisé en fonction de ton profil, des articles et des salons de discussions textuels pour entepreneurs. ") 
           else {
             finalScreen("Nous estimons que tu es relativement prêt à te lancer, mais ne te presse pas !", "Nous te conseillons de checker cette liste d’article “Les premiers pas de L’entreuprenariat” rédigés sur Entraide.fr qui peuvent t’aider dans ta démarche. En créant ton compte sur Entraide.fr tu rejoins une communauté de 100 000 Entrepreneurs Français et Internationaux où le mot d’ordre est entraide") 
           }
