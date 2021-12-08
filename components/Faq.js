@@ -9,7 +9,7 @@ export default function Faq() {
         },
         {
             title: 'Pourquoi des partenariats ?',
-            text: "Étant donné que chez entregens nous ne fournissons pas de service en tant que tel, nous avons trouvé intéressant de recommander à travers ses partenariats des services que la communauté a déjà approuvée et tester, pour que ceux qui viendront après nous puisse profiter de notre contenu et se concentrer sur leurs objectifs."
+            text: "Étant donné que chez entregens nous ne fournissons pas de services en tant que tel, nous avons trouvé intéressant de recommander à travers ses partenariats des services que la communauté a déjà approuvée et tester, pour que ceux qui viendront après nous puisse profiter de notre contenu et se concentrer sur leurs objectifs."
         },
         {
             title: "C'est qui l'entrepreneur qui vous inspire à Entregens ?",
