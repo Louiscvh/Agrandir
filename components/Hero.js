@@ -73,13 +73,8 @@ export default function Hero() {
                 <div>
                     <h4>Réseaux</h4>
                     <div className={styles.hero__social}>
-                        <a href="#" className={styles.hero__social__block}>
-                            IN
-                        </a>
-                        <span>-</span>
-                        <a href="#" className={styles.hero__social__block}>
-                            LI
-                        </a>
+                        <a target="_blank" rel="noreferrer" title="Instagram" href="https://www.instagram.com/entregens_/" className={styles.hero__social__block}>IN - </a>
+                        <a target="_blank" rel="noreferrer" title="Linkedin" href="https://www.linkedin.com/company/entregens-officiel/" className={styles.hero__social__block}>LI</a>
                     </div>
                 </div>
             </aside>

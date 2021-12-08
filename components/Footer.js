@@ -31,13 +31,8 @@ export default function Footer() {
         <ul>
           <li><a href="#">hello@entre-gens.fr</a></li>
           <li>
-            <a href="#" className={styles.hero__social__block}>
-                  IN
-              </a>
-              <span>-</span>
-              <a href="#" className={styles.hero__social__block}>
-                  LI
-            </a>
+            <a target="_blank" rel="noreferrer" title="Instagram" href="https://www.instagram.com/entregens_/" className={styles.hero__social__block}>IN - </a>
+            <a target="_blank" rel="noreferrer" title="Linkedin" href="https://www.linkedin.com/company/entregens-officiel/" className={styles.hero__social__block}>LI</a>
           </li>
         </ul>
       </div>
@@ -60,8 +55,8 @@ export default function Footer() {
       </div>
       <div className={styles.footerBottom}>
         <div className={styles.footerImg}>
-          <Images src={footerimage1} className={styles.img} height="70" width="65" alt="logo"></Images>
-          <Images src={footerimage2} className={styles.img} height="19" width="76" alt="logo"></Images>
+          <Images src={footerimage1} className={styles.img} height="70" width="65" alt="Ministère du travail"></Images>
+          <Images src={footerimage2} className={styles.img} height="19" width="76" alt="CCI France"></Images>
         </div>
         <p>© ENTREGENS 2021</p>
       </div>
