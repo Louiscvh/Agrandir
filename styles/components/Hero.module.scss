@@ -135,6 +135,7 @@
 
     canvas {
         position: fixed;
+        top: -50vh;
         z-index: -1;
         -webkit-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
         -o-transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);

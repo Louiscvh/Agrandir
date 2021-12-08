@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, Suspense } from "react";
 import Header from '../components/Header'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { useLoader } from '@react-three/fiber'
+import { useLoader, Box } from '@react-three/fiber'
 import Image from 'next/image'
 
 let pos = 0;
@@ -11,35 +11,54 @@ let pos = 0;
 export default function Hero() {
 
     const heroBackground = useRef()
+    const mesh = useRef()
 
     useEffect(() => {
+        let canva = document.querySelector('#canvas canvas')
+        window.addEventListener('load',() => {
+            canva.style.top = "0vh"
+        } )
         window.addEventListener('scroll', () => {
             pos = window.scrollY / 200
             if (window.scrollY < 1280) heroBackground.current.style.transform = `scale(${(window.scrollY + 250) * 2})`;
         })
+
+        
     }, [pos])
 
-    const Model = () => {
-        const mesh = useRef()
-        const gltf = useLoader(GLTFLoader, "./assets/models/scene.gltf");
-        useFrame(({camera}) => {
-            mesh.current.rotation.y = -pos / 3
-        })
+
+
+    function Box(props) {
+        // This reference will give us direct access to the mesh
+        // Set up state for the hovered and active state
+        const [hovered, setHover] = useState(false)
+        const [active, setActive] = useState(false)
+        // Subscribe this component to the render-loop, rotate the mesh every frame
+        useFrame((state, delta) => (mesh.current.rotation.y += 0.01))
+        // Return view, these are regular three.js elements expressed in JSX
         return (
-            <>
-                <primitive ref={mesh} object={gltf.scene} scale={0.7} />
-            </>
-        );
-    };
+          <mesh
+            {...props}
+            ref={mesh}
+            scale={active ? 1.5 : 1}
+            onClick={(event) => setActive(!active)}
+            onPointerOver={(event) => setHover(true)}
+            onPointerOut={(event) => setHover(false)}
+          >
+            <boxGeometry args={[1, 1, 1]} />
+            <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
+          </mesh>
+        )
+      }
+
+  
 
     return (
         <section id={"1"} className={styles.hero}>
             <Canvas camera={{ fov: 12, position: [0, 10, 35]}} colorManagement={false} id="canvas">
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
-                <Suspense fallback={null}>
-                    <Model />
-                </Suspense>
+                <Box position={[0, 0, 0]} />
             </Canvas>
             <Header />
             <div>

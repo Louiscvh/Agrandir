@@ -71,7 +71,7 @@ export default function Home() {
         <html lang="fr" />
         <title>Entre gens</title>
         <meta name="description" content="Sur 900 000 entrepreneurs en France, on a réunis une communauté de 100 000 entrepreneurs français: Web, Artisanat, Art, Marketing, Vente... Les entrepreneurs de notre communauté viennent de tous les secteurs possibles et imaginables, ce qui fait la force de notre association." />
-        <link rel="icon" href="../assets/img/favicon.svg" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="stylesheet" type="text/css" href="https://cookieconsent.popupsmart.com/src/css/style.css" />
         <link rel="canonical" href="https://www.entre-gens.fr/" />
         <meta name="msapplication-config" content="browserconfig.xml"></meta>
@@ -89,7 +89,6 @@ export default function Home() {
         <meta property="og:image" content="../assets/img/logo.webp" />
         <link rel="dns-prefetch" href="https://www.entre-gens.fr/" />
         <link rel="preconnect" href="https://www.entre-gens.fr/" />
-
         <script async src={"https://www.googletagmanager.com/gtag/js?id=G-TT2S1Y8VMN"}></script>
         <script
           dangerouslySetInnerHTML={{
@@ -140,8 +139,6 @@ export default function Home() {
         }
       `}</style>
       <script src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
-      
-      
       <noscript>Please enable Javascript !</noscript>
     </>
   )
