@@ -23,7 +23,7 @@ export default function Footer() {
       <div className={styles.footerBlock}>
         <h3>Mentions légales</h3>
         <ul>
-          <li><a href="/mentions" title="Lien vers les mentions">CGU</a></li>
+          <li><a href="/mentions" target="_blank" rel="noreferrer" title="Lien vers les mentions">CGU</a></li>
         </ul>
       </div>
       <div className={styles.footerBlock}>
