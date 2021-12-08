@@ -70,7 +70,6 @@ export default function Home() {
         <html lang="fr" />
         <title>Entre gens</title>
         <meta name="description" content="Sur 900 000 entrepreneurs en France, on a réunis une communauté de 100 000 entrepreneurs français: Web, Artisanat, Art, Marketing, Vente... Les entrepreneurs de notre communauté viennent de tous les secteurs possibles et imaginables, ce qui fait la force de notre association." />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
         <link rel="canonical" href="https://www.entre-gens.fr/" />
         <meta name="msapplication-config" content="browserconfig.xml"></meta>
         <meta property="og:url" content="https://www.entre-gens.fr/" />
