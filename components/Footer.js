@@ -3,6 +3,8 @@ import React, { useRef, useState } from 'react';
 import Images from "next/image";
 import footerimage1 from "../public/assets/img/footer/footer_image1.webp";
 import footerimage2 from "../public/assets/img/footer/footer_image2.webp";
+import Link from 'next/link'
+
 
 export default function Footer() {
   const [searchString, setSearchString] = useState('');
@@ -29,7 +31,9 @@ export default function Footer() {
       <div className={styles.footerBlock}>
         <h3>Contact</h3>
         <ul>
-          <li><a href="#">hello@entre-gens.fr</a></li>
+          <li><Link href="/metions">
+            <a>CGU</a>
+            </Link></li>
           <li>
             <a target="_blank" rel="noreferrer" title="Instagram" href="https://www.instagram.com/entregens_/" className={styles.hero__social__block}>IN - </a>
             <a target="_blank" rel="noreferrer" title="Linkedin" href="https://www.linkedin.com/company/entregens-officiel/" className={styles.hero__social__block}>LI</a>
