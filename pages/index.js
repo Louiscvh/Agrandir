@@ -102,6 +102,7 @@ export default function Home() {
             `,
           }}
         />
+        <script src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
       </Head>
       <div className={styles.noise}></div>
       <div className={styles.cursor} ref={cursor}></div>
@@ -139,7 +140,6 @@ export default function Home() {
           padding: 0px;
         }
       `}</style>
-      <Script  src="https://cookieconsent.popupsmart.com/src/js/popper.js"></Script >
       <noscript>Please enable Javascript !</noscript>
     </>
   )
