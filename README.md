@@ -1,34 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Entre gens
 
-## Getting Started
+Nous voulons offrir une landing page permettant de guider l'utilisateur grâces à des interactions. Pour cela, nous suivons Fergie à travers tout le site, qui représente l'utilisateur dans son parcours.
 
-First, run the development server:
+## Objectifs
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Tout d'abord notre Landing Page contribue à présenter notre concept à l'utilisateur, nous voulons motiver l'utilisateur à plonger dans le monde de l'entreprenariat. La navigation et les différentes sections se trouvant sur notre Landing, ont pour but de rassurer l'utilisateur et de lui faire passer un message. L'utilisateur rencontrera des visions externes / expériences parfois semblable à celles à la sienne pouvant l'aiguiller et l'éclaircir dans son parcours. Un quizz est mis en place pour mieux cerner l'utilisateur et 'l'évaluer' afin de lui fournir une sélection de ressources adaptée à lui.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Lien
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ [Visiter la page](https://www.entre-gens.fr/)
