@@ -35,8 +35,12 @@ export default function Footer() {
             <a>CGU</a>
             </Link></li>
           <li>
-            <a target="_blank" rel="noreferrer" title="Instagram" href="https://www.instagram.com/entregens_/" className={styles.hero__social__block}>IN - </a>
-            <a target="_blank" rel="noreferrer" title="Linkedin" href="https://www.linkedin.com/company/entregens-officiel/" className={styles.hero__social__block}>LI</a>
+            <Link href="https://www.instagram.com/entregens_/">
+              <a className={styles.hero__social__block}>IN - </a> 
+              </Link>
+            <Link href="https://www.linkedin.com/company/entregens-officiel/">
+              <a className={styles.hero__social__block}>LI</a>
+              </Link>
           </li>
         </ul>
       </div>
