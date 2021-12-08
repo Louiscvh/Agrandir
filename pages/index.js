@@ -102,7 +102,7 @@ export default function Home() {
             `,
           }}
         />
-        <script src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+        <script src="https://cookieconsent.popupsmart.com/src/js/popper.js" />
       </Head>
       <div className={styles.noise}></div>
       <div className={styles.cursor} ref={cursor}></div>
