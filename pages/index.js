@@ -46,7 +46,7 @@ export default function Home() {
 
     let sections = document.querySelectorAll('[data-appear]')
     let options = {
-        threshold: 0.5
+        threshold: 0.3
     };
     const io = new IntersectionObserver(entries => {
         entries.forEach(entry => {
