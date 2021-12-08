@@ -43,12 +43,12 @@
         form {
             div {
                 background-color: #f1f1f1;
-                color: #494949;
+                color: $greyDark;
                 padding: 20px;
                 border-radius: 10px;
                 margin-bottom: 30px;
                 label {
-                    color: #494949;
+                    color: $greyDark;
                     text-transform: uppercase;
                     padding-left: 35px;
                     display: block;

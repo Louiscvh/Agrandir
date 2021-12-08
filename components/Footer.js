@@ -1,5 +1,8 @@
 import styles from "../styles/components/Footer.module.scss";
 import React, { useRef, useState } from 'react';
+import Images from "next/image";
+import footerimage1 from "../public/assets/img/footer/footer_image1.webp";
+import footerimage2 from "../public/assets/img/footer/footer_image2.webp";
 
 export default function Footer() {
   const [searchString, setSearchString] = useState('');
@@ -54,6 +57,13 @@ export default function Footer() {
               </div>
           </form>
         </div>
+      </div>
+      <div className={styles.footerBottom}>
+        <div className={styles.footerImg}>
+          <Images src={footerimage1} className={styles.img} height="70" width="65" alt="logo"></Images>
+          <Images src={footerimage2} className={styles.img} height="19" width="76" alt="logo"></Images>
+        </div>
+        <p>© ENTREGENS 2021</p>
       </div>
     </footer>
   );
