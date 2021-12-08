@@ -9,7 +9,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} data-appear>
       <div className={styles.footerBlock}>
         <h3>About Us</h3>
         <ul>

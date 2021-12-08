@@ -46,6 +46,24 @@ export default function Home() {
       else scrollbar.current.style.transform = 'translateY(0px)'
     });
 
+    let sections = document.querySelectorAll('[data-appear]')
+    let options = {
+        threshold: 0.5
+    };
+    const io = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.setAttribute("style", "transition: all 0.3s ease; opacity: 1; transform: translateY(0px);")
+            } else {
+                entry.target.setAttribute("style", "transition: all 0.3s ease; opacity: 0; transform: translateY(30px);")
+            }
+        })
+    }, options)
+
+    sections.forEach(elt => {
+        io.observe(elt)
+    });
+
   })
   return (
     <>

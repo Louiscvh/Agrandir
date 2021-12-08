@@ -155,7 +155,7 @@ export default function Quizz() {
     changeQuestion(0)
   })
   return (
-    <section id={"4"} className={styles.quizzContainer}>
+    <section id={"4"} className={styles.quizzContainer} data-appear>
       {
         <div className={styles.quizzBlock}>
           <h2 className={styles.quizzHeader} ref={quizzTitle}>On t’a parlé de nous, et toi ? <span data-up>dis nous tout !</span></h2>

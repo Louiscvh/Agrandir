@@ -78,7 +78,7 @@ export default function Temoignage() {
 
 
   return (
-    <section id={"3"} className={styles.temoignageContainer}>
+    <section id={"3"} className={styles.temoignageContainer} data-appear>
       {
         <div className={styles.temoignageBlock} ref={temoignage}>
           <div className={styles.temoignageText}>

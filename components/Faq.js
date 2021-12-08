@@ -29,7 +29,7 @@ export default function Faq() {
     }
     
   return (
-    <section id={"5"} className={styles.faqContainer}>
+    <section id={"5"} className={styles.faqContainer} data-appear>
         {faqdata.map((elt, i) => (
                 <div key={i} className={styles.faqBlock} onClick={() => toggle(i)}>
                     <div className={styles.faqHeader}>
