@@ -7,7 +7,6 @@ import Faq from "../components/Faq";
 import Interview from "../components/Interview";
 import Footer from "../components/Footer";
 import { useEffect, useRef, useState } from "react";
-import Script from 'next/script'
 
 export default function Home() {
   const scrollbar = useRef(null)
@@ -41,7 +40,7 @@ export default function Home() {
       if (scrollPourcent > 75) document.querySelector('#canvas canvas').style.opacity = `0`
       else document.querySelector('#canvas canvas').style.opacity = `1`
       if (scrollPourcent > 100) {
-        scrollbar.current.style.transform = 'translateY(-240px)'
+        scrollbar.current.style.transform = 'translateY(-270px)'
       }
       else scrollbar.current.style.transform = 'translateY(0px)'
     });
