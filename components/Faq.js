@@ -4,20 +4,20 @@ import { useState } from 'react'
 export default function Faq() {
     let faqdata = [
         {
-            title: 'Question numéro 1',
-            text: 'Quelle est la meilleure et la pire chose dans le fait d\'être un homme? Quel film aimez-vous tant que vous pouvez regarder à plusieurs reprises ?'
+            title: 'Qui êtes vous ?',
+            text: "Entregens c’est une association fondée en Janvier 2021 par une centaine d’entrepreneur passionné par leur métier. Ca peut paraître bateau, mais les motivations qui poussent des profils comme le tiens à se lancer dans l’entrepreneuriat sont généralement la liberté professionnelle et/ou le fait de pouvoir travailler d’où l’on veut. Mais avant de pouvoir satisfaire ces envies nous, en tant qu’entrepreneur, devons tous passer par des moments pas toujours amusantes. C’est face à ces frustrations que nous avons aussi vécus que l’on s’est dit qu’en tant que professionnels experimentés, on se devait de mettre à disposition de ceux qui viendrait derrière nous, toutes les infos, conseils et outils qu’on aurait aimer connaitre avant de nous lancer. Nous avons donc rassemblé sur une plateforme entraide.fr sur lequel tu trouveras tout ce dont tu as besoin. Mais avant de te jetter dessus, continu ta lecture encore un peu, tu seras pas déçu 😜."
         },
         {
-            title: 'Question numéro 2',
-            text: 'Que feriez-vous / ne feriez-vous pas pour un million de dollars? Quelle est une chose que vous appréciez quand vous étiez enfant et que vous appréciez encore ?'
+            title: 'Pourquoi des partenariats ?',
+            text: "Étant donné que chez entregens nous ne fournissons pas de service en tant que tel, nous avons trouvé intéressant de recommander à travers ses partenariats des services que la communauté a déjà approuvée et tester, pour que ceux qui viendront après nous puisse profiter de notre contenu et se concentrer sur leurs objectifs."
         },
         {
-            title: 'Question numéro 3',
-            text: 'Quelle est la situation de pression la plus élevée dans laquelle vous ayez jamais été et comment l avez-vous gérée? Qu est-ce qui vous stresse ?'
+            title: "C'est qui l'entrepreneur qui vous inspire à Entregens ?",
+            text: "Chez nous c'est Elon Musk"
         },
         { 
-            title: 'Question numéro 4',
-            text: 'Quelle personne ou quel événement a eu le plus grand impact sur votre vie ? Si vous pouviez faire une chose chaque jour de votre vie pour le reste de votre vie, quelle serait-elle ?'
+            title: 'Quelles sont vos valeurs ?',
+            text: 'Chez Entregens nos valeurs sont le partage, l’entraide, la bonne humeur et les amis.'
         }
     ]
     const [selected, setSelected] = useState(null)
