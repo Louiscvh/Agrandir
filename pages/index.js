@@ -7,6 +7,7 @@ import Faq from "../components/Faq";
 import Interview from "../components/Interview";
 import Footer from "../components/Footer";
 import { useEffect, useRef, useState } from "react";
+import Script from 'next/script'
 
 export default function Home() {
   const scrollbar = useRef(null)
@@ -138,7 +139,7 @@ export default function Home() {
           padding: 0px;
         }
       `}</style>
-      <script src="https://cookieconsent.popupsmart.com/src/js/popper.js"></script>
+      <Script  src="https://cookieconsent.popupsmart.com/src/js/popper.js"></Script >
       <noscript>Please enable Javascript !</noscript>
     </>
   )
