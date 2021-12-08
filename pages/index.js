@@ -34,11 +34,10 @@ export default function Home() {
       scrollPourcent = (window.scrollY / (document.body.offsetHeight - windowHeight)) * 100;
       scrollbarIndicator.current.style.height = `${scrollPourcent}%`;
       if (scrollPourcent > 0 && scrollPourcent < 8) document.querySelector('#canvas canvas').style.transform = `translateX(0%)`
-      if (scrollPourcent > 8 && scrollPourcent < 45) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
-      if (scrollPourcent > 45 && scrollPourcent < 60) document.querySelector('#canvas canvas').style.transform = `translateX(-30%)`
-      if (scrollPourcent > 60 && scrollPourcent < 100) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
-      if (scrollPourcent > 75) document.querySelector('#canvas canvas').style.opacity = `0`
-      else document.querySelector('#canvas canvas').style.opacity = `1`
+      if (scrollPourcent > 8 && scrollPourcent < 30) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
+      if (scrollPourcent > 30 && scrollPourcent < 50) document.querySelector('#canvas canvas').style.transform = `translateX(-30%)`
+      if (scrollPourcent > 50 && scrollPourcent < 100) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
+      if (scrollPourcent > 75) document.querySelector('#canvas canvas').style.transform = `translateX(200%)`
       if (scrollPourcent > 100) {
         scrollbar.current.style.transform = 'translateY(-270px)'
       }

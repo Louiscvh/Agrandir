@@ -26,8 +26,6 @@ export default function Hero() {
         
     }, [pos])
 
-
-
     function Box(props) {
         // This reference will give us direct access to the mesh
         // Set up state for the hovered and active state
@@ -58,7 +56,7 @@ export default function Hero() {
             <Canvas camera={{ fov: 12, position: [0, 10, 35]}} colorManagement={false} id="canvas">
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
-                <Box position={[0, 0, 0]} />
+                <Box position={[0, 0, 0]}/>
             </Canvas>
             <Header />
             <div>
