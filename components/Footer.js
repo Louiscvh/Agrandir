@@ -31,8 +31,8 @@ export default function Footer() {
       <div className={styles.footerBlock}>
         <h3>Contact</h3>
         <ul>
-          <li><Link href="/metions">
-            <a>CGU</a>
+          <li><Link href="mailto:hello@entre-gens.com">
+            <a>hello@entre-gens.fr</a>
             </Link></li>
           <li>
             <Link href="https://www.instagram.com/entregens_/">
