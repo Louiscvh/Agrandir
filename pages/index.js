@@ -132,7 +132,7 @@ export default function Home() {
         body {
           margin: 0px;
           padding: 0px;
-        }
+          background:#fbfbfb url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAD1BMVEUAAAD8/vz09vT8+vz08vQ/kKNDAAAAAXRSTlMAQObYZgAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAqxJREFUOI0VVNkVxCAItAWFBgQa4GhAsf+aMvnKvqyBOR3kRl12M9q4pGZYOyuN47L3mzZt1303BAdi0xuekStm9d75nMQ4ltStcbcR12HxMO9jR+dybx/1gu/Zh3asJeeYS4RjR63iiKy7LOnKy8So5TzuO+IrMpkDT6WMe1fJyNSld970eZ4tucI3q2zIXXoYh1Topawt/XiGDKuid5iz+67Wczs13owhZnta99pAUbOtebf3HIs67dqELO1aws3s+t4IrGbH75D1QvyJrZB3x9wR9y0CK0/jdKkgLATB3kR7Voi+9TRIJo6uMef0oJO2b/LbxxLCJ9FwbMj2eQ/kpqo+US+Bqv/Hs4yKOkQvjkD9bPBwtpN6IVFVcKjsioihtaEtx1xvirADpDZrjjjHL6B46waX8P2Odq4Bz97VWHPiyIPo5rbYfYTCl7IZEBHwrQCcKO6QkzDQ9YIjL4L2AcF4jwMRV6oR3PnDM/Wd0xXjHLItZHlfV/mvxkMIc3SrnDWfx+p1uGrmKyofcNgDlDxr7t7GtNXE5niJxDpdlpV7eQdGnwgb623HDCAsv2/fnUmPc48soV6CpKnxFWXYaIFRtSg3VfMBx7BDFx8D7yD/8de2vXpOMz+bH70aE6MDqrLoJUUYSkCgQRCNaIS92cDuPFhhIQd/zClxaV1NoJjCkaT78nB3xXhwkvtnktRMUKSBGBsZkhMhjeRStD6FiNBDEhGD+EpWk47kTIuR0hctxAtyJKV5nszbOlbVxropBGOCnhzi1ZnjlVIt4A3dvv/eogqElEDayC7NnDAd8h4pRqZGa8xbxiiy3al7Ipe4IZBEKuASRcku9OY/mRHMI/bDddFo8zklgloh4kVrbAdVgHV1g0+MoNDEfTQaltaCerAK98wuyqUz8gP09MIlooc17AAAAABJRU5ErkJggg==);        }
       `}</style>
       <noscript>Please enable Javascript !</noscript>
     </>

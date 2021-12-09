@@ -23,7 +23,7 @@
         transition: all 0.5s;
         padding-bottom: 30px;
         margin-bottom: $margin-base-bottom;
-        border-bottom: 1px solid #a5a5a5;
+        border-bottom: 1px solid $grey;
 
         p {
             text-align: justify;
@@ -115,17 +115,17 @@
     .faqBlock:first-child,
     .faqBlock:last-child {
         span {
-            background-color: #8983d8;
+            background-color: $purple;
         }
     }
     .faqBlock:nth-child(2) {
         span {
-            background-color: #f9bb5d;
+            background-color: $orange;
         }
     }
     .faqBlock:nth-child(3) {
         span {
-            background-color: #dd5068;
+            background-color: $pink;
         }
     }
 }
