@@ -124,7 +124,7 @@ export default function Quizz() {
                                         <p>${text}</p>
                                         <div data-finalscreen-button>
                                           <a href="https://www.entre-gens.fr/#4" id="totalQuestions">Rejouer</a>
-                                          <a target="_blank" href="https://principle.app/share?id=VN5yEE24Bg5Ssqf2Zey5">Découvrir le site entre-aide.fr</a>
+                                          <a target="_blank" href="https://principle.app/share?id=5UtML33iHHpQP2gkYAv9">Découvrir le site entre-aide.fr</a>
                                         <div>`
     } 
 
