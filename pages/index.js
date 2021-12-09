@@ -62,22 +62,22 @@ export default function Home() {
       io.observe(elt)
     });
 
-    let test = document.querySelectorAll('section')
-    let testoptions = {
+    let container = document.querySelectorAll('section')
+    let observeroptions = {
       threshold: 0.2
     };
     let nav = document.querySelector("nav");
-    const aaa = new IntersectionObserver(entries => {
+    const containerio = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             console.log(entry.target.id)
             nav.setAttribute('data-before', entry.target.getAttribute('data-name'))
           }
         })
-    }, testoptions)
+    }, observeroptions)
 
-    test.forEach(elt => {
-        aaa.observe(elt)
+    container.forEach(elt => {
+        containerio.observe(elt)
     });
 
   })
