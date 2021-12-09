@@ -2,9 +2,9 @@ import styles from "../styles/components/Hero.module.scss";
 import { useEffect, useRef, useState, Suspense } from "react";
 import Header from '../components/Header'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
+import { MTLLoader } from "three/examples/jsm/loaders/MTLLoader";
 import { useLoader, Box } from '@react-three/fiber'
-import Image from 'next/image'
 
 let pos = 0;
 
@@ -26,18 +26,28 @@ export default function Hero() {
         
     }, [pos])
 
+    const Model = () => {
+        
+        const materials = useLoader(MTLLoader, "./assets/models/model.mtl");
+        const obj = useLoader(OBJLoader, "./assets/models/model.obj", (loader) => {
+          materials.preload();
+          loader.setMaterials(materials);
+        });
+        useFrame((state, delta) => (mesh.current.rotation.y += 0.01))
+        console.log(obj)
+              return <primitive ref={mesh} object={obj} scale={0.02} position={[0, -1, 0]}/>;
+      };
+
     function Box(props) {
         // This reference will give us direct access to the mesh
         // Set up state for the hovered and active state
         const [hovered, setHover] = useState(false)
         const [active, setActive] = useState(false)
         // Subscribe this component to the render-loop, rotate the mesh every frame
-        useFrame((state, delta) => (mesh.current.rotation.y += 0.01))
         // Return view, these are regular three.js elements expressed in JSX
         return (
           <mesh
             {...props}
-            ref={mesh}
             scale={active ? 1.5 : 1}
             onClick={(event) => setActive(!active)}
             onPointerOver={(event) => setHover(true)}
@@ -54,9 +64,11 @@ export default function Hero() {
     return (
         <section id={"1"} className={styles.hero}>
             <Canvas camera={{ fov: 12, position: [0, 10, 35]}} colorManagement={false} id="canvas">
-                <ambientLight />
-                <pointLight position={[10, 10, 10]} />
-                <Box position={[0, 0, 0]}/>
+                <Suspense fallback={null}>
+                    <ambientLight />
+                    <pointLight position={[10, 10, 10]} />
+                    <Model />
+                </Suspense>
             </Canvas>
             <Header />
             <div>

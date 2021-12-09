@@ -63,7 +63,7 @@ export default function Footer() {
       </div>
       <div className={styles.footerBottom}>
         <div className={styles.footerImg}>
-          <Images src={footerimage1} className={styles.img} height="70" width="65" alt="Ministère du travail"></Images>
+          <Images src={footerimage1} className={styles.img} height="70" width="80" alt="Ministère du travail"></Images>
           <Images src={footerimage2} className={styles.img} height="19" width="76" alt="CCI France"></Images>
         </div>
         <p>© ENTREGENS 2021</p>
