@@ -22,7 +22,7 @@
         -o-transition: all 0.5s;
         transition: all 0.5s;
         padding-bottom: 30px;
-        margin-bottom: 30px;
+        margin-bottom: $margin-base-bottom;
         border-bottom: 1px solid #a5a5a5;
 
         p {

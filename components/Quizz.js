@@ -83,7 +83,7 @@ export default function Quizz() {
       value: 400
     },
     {
-      titre: "Un bon salarié soumis",
+      titre: "Un bon salarié",
       value: 100
     }
     ]
@@ -120,8 +120,13 @@ export default function Quizz() {
 
     const finalScreen = (title, text) => {
       quizzTitle.current.innerHTML = `${title}`
-      quizzContent.current.innerHTML = `<h4>Votre score est de <span data-up>${score}</span></h4><p>${text}</p><a href="https://www.entre-gens.fr/#4" id="totalQuestions">Rejouer</a>`
-    }
+      quizzContent.current.innerHTML = `<h4>Votre score est de <span data-up>${score}</span></h4>
+                                        <p>${text}</p>
+                                        <div data-finalscreen-button>
+                                          <a href="https://www.entre-gens.fr/#4" id="totalQuestions">Rejouer</a>
+                                          <a target="_blank" href="https://principle.app/share?id=VN5yEE24Bg5Ssqf2Zey5">Découvrir le site entre-aide.fr</a>
+                                        <div>`
+    } 
 
     const changeQuestion = (id) => {
 

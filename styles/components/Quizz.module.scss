@@ -11,12 +11,12 @@
 
         p {
             text-transform: uppercase;
-            margin-bottom: 30px;
+            margin-bottom: $margin-base-bottom;
         }
 
         h3 {
             text-transform: uppercase;
-            margin-bottom: 30px;
+            margin-bottom: $margin-base-bottom;
         }
 
         h4 {
@@ -40,13 +40,20 @@
                 color: #8983d8;
             }
         }
+        [data-finalscreen-button]{
+            display: flex;
+            flex-wrap: wrap;
+            a:first-of-type{
+                margin-bottom: $margin-base-bottom/2;
+            }
+        }
         form {
             div {
                 background-color: #f1f1f1;
                 color: $greyDark;
                 padding: 20px;
                 border-radius: 10px;
-                margin-bottom: 30px;
+                margin-bottom: $margin-base-bottom;
                 label {
                     color: $greyDark;
                     text-transform: uppercase;
