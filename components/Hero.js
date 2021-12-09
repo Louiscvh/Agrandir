@@ -33,8 +33,7 @@ export default function Hero() {
           materials.preload();
           loader.setMaterials(materials);
         });
-        useFrame((state, delta) => (mesh.current.rotation.y += 0.01))
-        console.log(obj)
+        useFrame((state, delta) => (mesh.current.rotation.y = pos))
               return <primitive ref={mesh} object={obj} scale={0.02} position={[0, -1, 0]}/>;
       };
 
