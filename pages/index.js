@@ -39,14 +39,14 @@ export default function Home() {
       if (scrollPourcent > 50 && scrollPourcent < 100) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
       if (scrollPourcent > 75) document.querySelector('#canvas canvas').style.transform = `translateX(200%)`
       if (scrollPourcent > 100) {
-        scrollbar.current.style.transform = 'translateY(-270px)'
+        scrollbar.current.style.transform = 'translateY(-300px)'
       }
       else scrollbar.current.style.transform = 'translateY(0px)'
     });
 
     let sections = document.querySelectorAll('[data-appear]')
     let options = {
-        threshold: 0.3
+        threshold: 0.25
     };
     const io = new IntersectionObserver(entries => {
         entries.forEach(entry => {

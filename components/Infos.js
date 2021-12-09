@@ -1,7 +1,5 @@
 import styles from '../styles/components/Infos.module.scss'
-import Image from 'next/image'
-import { useEffect, useRef } from 'react'
-import { HtmlContext } from 'next/dist/shared/lib/utils'
+import { useRef } from 'react'
 
 
 export default function Infos() {
@@ -12,27 +10,18 @@ export default function Infos() {
         }
     ]
     return (
-        <section id={"2"} data-name="Infos" className={styles.infos}>
+        <section id={"2"} className={styles.infos} data-appear>
             <div className={styles.infosContainer}>
                 <h2><span data-up>Entregens t’accompagne</span><br></br> dans tes démarches ✨</h2>
-                    {
-                        data.map((elt, i) => {
-                            return <InfosBlock key={i} title={elt.title} text={elt.text} />
-                        })
-                    }
-                <a target="_blank" rel="noreferrer"href="https://principle.app/share?id=VN5yEE24Bg5Ssqf2Zey5" className={styles.btnPrimary}>Découvrir le site entre-aide.fr</a>
+                <div className={styles.infosContent}>
+                    <div className={styles.infoDetails}>
+                        <h3 className={styles.infoTitle}>Un réseau de plus de <span>100 000 entrepreneurs !</span></h3>
+                        <p className={styles.infoText}>Sur 900 000 entrepreneurs en France, on a réunis une communauté de 100 000 entrepreneurs français: Web, Artisanat, Art, Marketing, Vente... Les entrepreneurs de notre communauté viennent de tous les secteurs possibles et imaginables, ce qui fait la force de notre association.<br></br><br></br>
+                        Sur entre-aide.fr, tu pourras retrouver un catalogue complet d’articles, conseils et informations vérifiés et écrient par des professionnels qui ont éprouvés leurs compétences dans leur domaine, ces articles traitent de l’entrepreneuriat et de tout ce qui gravite autour, santé mentale, argent, amis, télétravail etc... En plus de ça tu peux rentrer en contact avec ces professionnels et tous les autres membres de la communauté (y compris nous) grâce à nos salons textuels.</p>
+                        <a target="_blank" rel="noreferrer"href="https://principle.app/share?id=5UtML33iHHpQP2gkYAv9" className={styles.btnPrimary}>Découvrir le site entre-aide.fr</a>
+                    </div>
+                </div>
             </div>
         </section>
-    )
-}
-
-export function InfosBlock(props) {
-    return (
-        <div className={styles.infosContent} data-appear>
-            <div className={styles.infoDetails}>
-                <h3 className={styles.infoTitle}>{props.title}</h3>
-                <p className={styles.infoText}>{props.text}</p>
-            </div>
-        </div>
     )
 }
