@@ -23,6 +23,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-transform: uppercase;
 
     div {
         height: 20px;
@@ -51,5 +52,15 @@
         -webkit-transform: scaleY(1.6);
         -ms-transform: scaleY(1.6);
         transform: scaleY(1.6);
+    }
+    &::before{
+        position: absolute;
+        content:attr(data-before);
+        top: -35px;
+        width: 100%;
+        text-align: center;
+        -webkit-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease;
     }
 }

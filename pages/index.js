@@ -59,7 +59,25 @@ export default function Home() {
     }, options)
 
     sections.forEach(elt => {
-        io.observe(elt)
+      io.observe(elt)
+    });
+
+    let test = document.querySelectorAll('section')
+    let testoptions = {
+      threshold: 0.2
+    };
+    let nav = document.querySelector("nav");
+    const aaa = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            console.log(entry.target.id)
+            nav.setAttribute('data-before', entry.target.getAttribute('data-name'))
+          }
+        })
+    }, testoptions)
+
+    test.forEach(elt => {
+        aaa.observe(elt)
     });
 
   })

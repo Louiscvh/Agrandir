@@ -9,7 +9,7 @@ export default function Header() {
       nav = document.querySelector("nav");
 
     sections.forEach((el, i) => {
-     nav.innerHTML += `<a href="#${el.id}"><div data-scroll="nav"></div></a>`
+     nav.innerHTML += `<a href="#${el.id}"><div class="test" data-scroll="nav"></div></a>`
     });
   });
   return (

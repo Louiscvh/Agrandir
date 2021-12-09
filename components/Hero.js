@@ -61,7 +61,7 @@ export default function Hero() {
   
 
     return (
-        <section id={"1"} className={styles.hero}>
+        <section id={"1"} data-name="Accueil" className={styles.hero}>
             <Canvas camera={{ fov: 12, position: [0, 10, 35]}} colorManagement={false} id="canvas">
                 <Suspense fallback={null}>
                     <ambientLight />
