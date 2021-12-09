@@ -123,10 +123,9 @@ export default function Quizz() {
       quizzContent.current.innerHTML = `<h4>Votre score est de <span data-up>${score}</span></h4>
                                         <p>${text}</p>
                                         <div data-finalscreen-button>
-                                          <a href="https://www.entre-gens.fr/#4" id="totalQuestions">Rejouer</a>
                                           <a target="_blank" href="https://principle.app/share?id=VN5yEE24Bg5Ssqf2Zey5">Découvrir le site entre-aide.fr</a>
-                                        <div>`
-    } 
+                                        </div>`
+    }
 
     const changeQuestion = (id) => {
 
@@ -145,12 +144,12 @@ export default function Quizz() {
           container.innerHTML = `<h3>${question.titre}</h3>
                     ${question.answers.map((elt, i) => {
             return `<div>
-                            <label for='options'>
-                              ${elt.titre}
-                              <input type='radio' name='options' value='${elt.value}' required>
-                              <span></span>
-                            </label>
-                        </div>`
+                        <label for='options'>
+                          ${elt.titre}
+                          <input type='radio' name='options' value='${elt.value}' required>
+                          <span></span>
+                        </label>
+                    </div>`
           }).join('')}`
         }
 

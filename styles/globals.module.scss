@@ -73,6 +73,8 @@
     background-color: pink;
     border-radius: 150px;
     pointer-events: none;
+    left: -6px;
+    top: -6px;
 }
 
 .fullContainer {
@@ -102,7 +104,7 @@
         text-transform: uppercase;
         font-weight: bold;
         text-align: center;
-        margin-top: $margin-base-top;
+        margin-top: 20px;
     }
 }
 
@@ -126,7 +128,7 @@
     input,
     button,
     nav {
-        font-family: "sofia_proregular";
+        font-family: $font1;
         -webkit-margin-before: 0em;
         margin-block-start: 0em;
         -webkit-margin-after: 0em;
@@ -167,7 +169,7 @@
         margin-top: 50px;
     }
     p {
-        margin-top: $margin-base-top;
+        margin-top: 20px;
         text-align: justify;
     }
 }

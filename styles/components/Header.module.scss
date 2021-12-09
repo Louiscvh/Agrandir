@@ -1,3 +1,5 @@
+@import "../variables.module.scss";
+
 .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11,7 +13,7 @@
     top: 0;
     z-index: 999999999999;
     width: 100%;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid $grey;
 }
 
 .navigation {
@@ -29,7 +31,7 @@
         height: 20px;
         width: 2px;
         opacity: 0.3;
-        background-color: black;
+        background-color: $black;
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
@@ -62,5 +64,8 @@
         -webkit-transition: 0.3s ease;
         -o-transition: 0.3s ease;
         transition: 0.3s ease;
+        font-family: $font2;
+        opacity: 0.75;
+        font-size: 0.8rem;
     }
 }

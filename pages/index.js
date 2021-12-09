@@ -70,7 +70,6 @@ export default function Home() {
     const containerio = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            console.log(entry.target.id)
             nav.setAttribute('data-before', entry.target.getAttribute('data-name'))
           }
         })
@@ -144,7 +143,6 @@ export default function Home() {
         html {
           scroll-behavior: smooth!important;
           overflow-x: hidden;
-          cursor: none;
         }
 
         body {

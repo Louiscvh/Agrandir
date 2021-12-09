@@ -52,7 +52,7 @@
                 background-color: #f1f1f1;
                 color: $greyDark;
                 padding: 20px;
-                border-radius: 10px;
+                border-radius: $bdr-radius;
                 margin-bottom: $margin-base-bottom;
                 label {
                     color: $greyDark;
@@ -86,11 +86,11 @@
                         height: 100%;
                     }
                     &:hover input ~ span {
-                        background-color: #fff;
+                        background-color: $white;
                     }
                     input:checked ~ span {
-                        background-color: #fff;
-                        border: 1px solid #000;
+                        background-color: $white;
+                        border: 1px solid $black;
                     }
                     span {
                         &:after {

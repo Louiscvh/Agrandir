@@ -37,10 +37,8 @@
     font-style: light;
 }
 
-$font-family-regular: "sofia_promedium";
-$font-family-bold: "sofia_prosemibold";
-
-$font-root-size: 16px;
+$font1: "sofia_proregular";
+$font2: "sequel_100_black55";
 
 //COLOR
 $pink: #dd5068;
@@ -52,25 +50,7 @@ $greyDark: #494949;
 $grey: #a5a5a5;
 
 //RADIUS
-$bdr-radius: 12px;
-
-//
-//TYPE
-$headings-font-family: $font-family-regular;
-$headings-font-weight: bold;
-$headings-color: $black;
-$font-size-h1: 25px;
-$font-size-h2: 22px;
-$font-size-h3: 20px;
-$font-size-h4: 18px;
-$font-size-base: 16px;
-$font-size-large: 22px;
-$font-size-xs: 12px;
-
-//
-//PADDING
-$padding-base-vertical: 10px;
-$padding-base-horizontal: 20px;
+$bdr-radius: 10px;
 
 //
 //MARGIN
