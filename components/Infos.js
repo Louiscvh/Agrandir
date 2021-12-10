@@ -10,7 +10,7 @@ export default function Infos() {
         }
     ]
     return (
-        <section id={"2"} className={styles.infos} data-appear>
+        <section id={"2"} data-name="Infos" className={styles.infos} data-appear>
             <div className={styles.infosContainer}>
                 <h2><span data-up>Entregens t’accompagne</span><br></br> dans tes démarches ✨</h2>
                 <div className={styles.infosContent}>
