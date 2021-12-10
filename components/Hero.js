@@ -34,38 +34,16 @@ export default function Hero() {
           loader.setMaterials(materials);
         });
         useFrame((state, delta) => (mesh.current.rotation.y = pos))
-              return <primitive ref={mesh} object={obj} scale={0.02} position={[0, -1, 0]}/>;
+              return <primitive ref={mesh} object={obj} scale={0.01} position={[0, -1.5, 0]}/>;
       };
-
-    function Box(props) {
-        // This reference will give us direct access to the mesh
-        // Set up state for the hovered and active state
-        const [hovered, setHover] = useState(false)
-        const [active, setActive] = useState(false)
-        // Subscribe this component to the render-loop, rotate the mesh every frame
-        // Return view, these are regular three.js elements expressed in JSX
-        return (
-          <mesh
-            {...props}
-            scale={active ? 1.5 : 1}
-            onClick={(event) => setActive(!active)}
-            onPointerOver={(event) => setHover(true)}
-            onPointerOut={(event) => setHover(false)}
-          >
-            <boxGeometry args={[1, 1, 1]} />
-            <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
-          </mesh>
-        )
-      }
-
   
 
     return (
         <section id={"1"} data-name="Accueil" className={styles.hero}>
-            <Canvas camera={{ fov: 12, position: [0, 10, 35]}} colorManagement={false} id="canvas">
+            <Canvas camera={{ fov: 12, position: [0, 10, 35]}} id="canvas">
                 <Suspense fallback={null}>
-                    <ambientLight />
-                    <pointLight position={[10, 10, 10]} />
+                    <ambientLight intensity={0.2}/>
+                    <pointLight position={[10, 10, 10]} intensity={0.5} color="pink"/>
                     <Model />
                 </Suspense>
             </Canvas>

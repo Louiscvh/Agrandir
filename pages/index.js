@@ -35,13 +35,13 @@ export default function Home() {
       scrollbarIndicator.current.style.height = `${scrollPourcent}%`;
       if (scrollPourcent > 0 && scrollPourcent < 8) document.querySelector('#canvas canvas').style.transform = `translateX(0%)`
       if (scrollPourcent > 8 && scrollPourcent < 30) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
-      if (scrollPourcent > 30 && scrollPourcent < 50) document.querySelector('#canvas canvas').style.transform = `translateX(-30%)`
-      if (scrollPourcent > 50 && scrollPourcent < 100) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
+      if (scrollPourcent > 30 && scrollPourcent < 49) document.querySelector('#canvas canvas').style.transform = `translateX(-30%)`
+      if (scrollPourcent > 48 && scrollPourcent < 100) document.querySelector('#canvas canvas').style.transform = `translateX(30%)`
       if (scrollPourcent > 75) document.querySelector('#canvas canvas').style.transform = `translateX(200%)`
       if (scrollPourcent > 100) {
-        scrollbar.current.style.transform = 'translateY(-300px)'
+        scrollbar.current.style.transform = 'translateY(-300px) rotate(180deg)'
       }
-      else scrollbar.current.style.transform = 'translateY(0px)'
+      else scrollbar.current.style.transform = 'translateY(0px) rotate(0deg)'
     });
 
     let sections = document.querySelectorAll('[data-appear]')
