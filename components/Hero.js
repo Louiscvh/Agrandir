@@ -40,10 +40,10 @@ export default function Hero() {
 
     return (
         <section id={"1"} data-name="Accueil" className={styles.hero}>
-            <Canvas camera={{ fov: 12, position: [0, 10, 35]}} id="canvas">
+            <Canvas camera={{ fov: 12, position: [0, 10, 35]}} id="canvas" colorManagement={false}>
                 <Suspense fallback={null}>
-                    <ambientLight intensity={0.2}/>
-                    <pointLight position={[10, 10, 10]} intensity={0.5} color="pink"/>
+                    <ambientLight intensity={0.5}/>
+                    <pointLight position={[10, 10, 10]} intensity={0.05} color="pink"/>
                     <Model />
                 </Suspense>
             </Canvas>

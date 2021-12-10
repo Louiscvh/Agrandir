@@ -75,6 +75,9 @@
     pointer-events: none;
     left: -6px;
     top: -6px;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
 }
 
 .fullContainer {
